@@ -16,63 +16,63 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reverse Words" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h8c-sc-7zY">
-                                <rect key="frame" x="16" y="144" width="343" height="42"/>
-                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="34"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Reverse Words" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h8c-sc-7zY">
+                                <rect key="frame" x="16" y="124.00000000000001" width="343" height="39.666666666666671"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="34"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This application will reverse your words. Please type text below " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aEi-lY-Xal">
-                                <rect key="frame" x="16" y="284" width="343" height="41.333333333333314"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="This application will reverse your words. Please type text below " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aEi-lY-Xal">
+                                <rect key="frame" x="16" y="181" width="343" height="41.333333333333314"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Text to reverse" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fwA-FM-Uk6">
-                                <rect key="frame" x="58" y="337" width="340" height="60"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="4yP-Al-Wqk"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="Evn-58-eGp"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hsp-XC-EuJ">
-                                <rect key="frame" x="16" y="421" width="4" height="18.333333333333314"/>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hsp-XC-EuJ">
+                                <rect key="frame" x="16" y="361" width="4" height="18.333333333333314"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="textColor" systemColor="linkColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oa7-Bi-4np">
-                                <rect key="frame" x="16" y="681" width="343" height="31"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oa7-Bi-4np">
+                                <rect key="frame" x="16" y="656" width="343" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Reverse" cornerStyle="large"/>
                                 <connections>
                                     <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KmU-sG-YHM"/>
                                 </connections>
                             </button>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g22-Ac-yAw">
+                                <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Reverse Words" id="m6e-Ow-ReP"/>
+                                </items>
+                            </navigationBar>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Text to reverse" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fwA-FM-Uk6">
+                                <rect key="frame" x="20" y="230" width="335" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                                <connections>
+                                    <action selector="editingDIdEnd:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="ZyR-Zy-OYC"/>
+                                    <action selector="editingDidBegin:" destination="BYZ-38-t0r" eventType="editingDidBegin" id="TNE-VW-SYE"/>
+                                    <action selector="editingDidEnd:forEvent:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="NoI-gn-aVc"/>
+                                </connections>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="fwA-FM-Uk6" secondAttribute="trailing" constant="-39" id="2iN-dm-NFu"/>
-                            <constraint firstItem="fwA-FM-Uk6" firstAttribute="top" secondItem="aEi-lY-Xal" secondAttribute="bottom" constant="11.5" id="HYs-dS-ftP"/>
-                            <constraint firstItem="aEi-lY-Xal" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="240" id="NsM-l7-XZ1"/>
-                            <constraint firstItem="hsp-XC-EuJ" firstAttribute="top" secondItem="fwA-FM-Uk6" secondAttribute="bottom" constant="24" id="Nti-04-HjP"/>
-                            <constraint firstItem="hsp-XC-EuJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Ps1-fw-OLb"/>
-                            <constraint firstItem="h8c-sc-7zY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Qed-xb-qMy"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oa7-Bi-4np" secondAttribute="trailing" constant="16" id="Wf7-dv-Wgf"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="aEi-lY-Xal" secondAttribute="trailing" constant="16" id="ars-kc-QXp"/>
-                            <constraint firstItem="aEi-lY-Xal" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="gID-l7-LRC"/>
-                            <constraint firstItem="fwA-FM-Uk6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="58" id="hye-wV-pv9"/>
-                            <constraint firstItem="oa7-Bi-4np" firstAttribute="top" relation="greaterThanOrEqual" secondItem="hsp-XC-EuJ" secondAttribute="bottom" constant="20" id="syc-17-wFl"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="h8c-sc-7zY" secondAttribute="trailing" constant="16" id="tne-ua-AgS"/>
-                            <constraint firstItem="h8c-sc-7zY" firstAttribute="topMargin" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="108" id="uE7-V6-UsM" customClass="NSLayoutHelper"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="oa7-Bi-4np" secondAttribute="bottom" constant="66" id="ucg-Dh-Pn0"/>
-                            <constraint firstItem="oa7-Bi-4np" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="xwE-0M-XSM"/>
-                        </constraints>
                     </view>
                     <connections>
+                        <outlet property="descriptionLabel" destination="aEi-lY-Xal" id="1CV-ay-ENF"/>
+                        <outlet property="navigationBar" destination="g22-Ac-yAw" id="rqj-IR-hqC"/>
+                        <outlet property="reverseButton" destination="oa7-Bi-4np" id="fYQ-HX-dFc"/>
+                        <outlet property="reverseWordsLabel" destination="h8c-sc-7zY" id="U7d-Bg-Ucp"/>
                         <outlet property="textInput" destination="fwA-FM-Uk6" id="4BD-0c-bHH"/>
                         <outlet property="textOutput" destination="hsp-XC-EuJ" id="26n-Wx-uqa"/>
                     </connections>

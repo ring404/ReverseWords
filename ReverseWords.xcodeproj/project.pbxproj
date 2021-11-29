@@ -13,6 +13,8 @@
 		DEE9064B273B0E91006D252E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEE90649273B0E91006D252E /* Main.storyboard */; };
 		DEE9064D273B0E96006D252E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEE9064C273B0E96006D252E /* Assets.xcassets */; };
 		DEE90650273B0E96006D252E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEE9064E273B0E96006D252E /* LaunchScreen.storyboard */; };
+		DEEA7A8B2752567400E791B3 /* SFPRODISPLAYBOLD.OTF in Resources */ = {isa = PBXBuildFile; fileRef = DEEA7A892752567300E791B3 /* SFPRODISPLAYBOLD.OTF */; };
+		DEEA7A8C2752567400E791B3 /* SFPRODISPLAYREGULAR.OTF in Resources */ = {isa = PBXBuildFile; fileRef = DEEA7A8A2752567300E791B3 /* SFPRODISPLAYREGULAR.OTF */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		DEE9064C273B0E96006D252E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DEE9064F273B0E96006D252E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DEE90651273B0E96006D252E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DEEA7A892752567300E791B3 /* SFPRODISPLAYBOLD.OTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = SFPRODISPLAYBOLD.OTF; sourceTree = "<group>"; };
+		DEEA7A8A2752567300E791B3 /* SFPRODISPLAYREGULAR.OTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = SFPRODISPLAYREGULAR.OTF; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				DEE9064C273B0E96006D252E /* Assets.xcassets */,
 				DEE9064E273B0E96006D252E /* LaunchScreen.storyboard */,
 				DEE90651273B0E96006D252E /* Info.plist */,
+				DEEA7A892752567300E791B3 /* SFPRODISPLAYBOLD.OTF */,
+				DEEA7A8A2752567300E791B3 /* SFPRODISPLAYREGULAR.OTF */,
 			);
 			path = ReverseWords;
 			sourceTree = "<group>";
@@ -126,7 +132,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				DEE90650273B0E96006D252E /* LaunchScreen.storyboard in Resources */,
+				DEEA7A8C2752567400E791B3 /* SFPRODISPLAYREGULAR.OTF in Resources */,
 				DEE9064D273B0E96006D252E /* Assets.xcassets in Resources */,
+				DEEA7A8B2752567400E791B3 /* SFPRODISPLAYBOLD.OTF in Resources */,
 				DEE9064B273B0E91006D252E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
