@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reverse Words" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h8c-sc-7zY">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Reverse Words" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h8c-sc-7zY">
                                 <rect key="frame" x="36" y="152" width="388" height="41"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="41" id="UBs-jO-kS0"/>
@@ -25,30 +25,32 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This application will reverse your words. Please type text below " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aEi-lY-Xal">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="This application will reverse your words. Please type text below " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aEi-lY-Xal">
                                 <rect key="frame" x="16" y="253" width="396" height="44"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="MOY-Tl-ePc"/>
-                                </constraints>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hsp-XC-EuJ">
-                                <rect key="frame" x="36" y="494" width="184" height="22"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="22" id="7Nh-YT-fRg"/>
-                                    <constraint firstAttribute="width" constant="184" id="mko-EJ-LUL"/>
-                                </constraints>
-                                <color key="textColor" systemColor="linkColor"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Text to reverse" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="QvS-qC-Mrx">
+                                <rect key="frame" x="36" y="356" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oa7-Bi-4np">
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="DRD-eo-fGM" userLabel="Text Output">
+                                <rect key="frame" x="36" y="501" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oa7-Bi-4np">
                                 <rect key="frame" x="16" y="770" width="396" height="56"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="56" id="Gmp-jJ-5WI"/>
-                                </constraints>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Reverse" cornerStyle="large"/>
                                 <connections>
@@ -62,48 +64,14 @@
                                     <navigationItem title="Reverse Words" id="m6e-Ow-ReP"/>
                                 </items>
                             </navigationBar>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Text to reverse" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fwA-FM-Uk6">
-                                <rect key="frame" x="36" y="452" width="128.33333333333334" height="22"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="22" id="qGJ-9N-ozf"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
-                                <textInputTraits key="textInputTraits" autocorrectionType="no"/>
-                                <connections>
-                                    <action selector="editingDIdEnd:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="ZyR-Zy-OYC"/>
-                                    <action selector="editingDidBegin:" destination="BYZ-38-t0r" eventType="editingDidBegin" id="TNE-VW-SYE"/>
-                                    <action selector="editingDidEnd:forEvent:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="NoI-gn-aVc"/>
-                                </connections>
-                            </textField>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JPZ-dY-dV6" userLabel="dividerView">
-                                <rect key="frame" x="36" y="492.66666666666669" width="356" height="0.33333333333331439"/>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JPZ-dY-dV6" userLabel="dividerView">
+                                <rect key="frame" x="36" y="492.66666666666674" width="356" height="0.33333333333331439"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="tintColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="0.5" id="dQS-di-t0M"/>
-                                </constraints>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="hsp-XC-EuJ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="450" id="0h0-Vl-0IU" userLabel="Text Output.top = topMargin + 377"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="JPZ-dY-dV6" secondAttribute="trailing" constant="16" id="1Jh-bP-oeN"/>
-                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="fwA-FM-Uk6" secondAttribute="trailing" id="Dh7-X5-0c5" userLabel="trailingMargin = Text Input.trailing + 16"/>
-                            <constraint firstItem="h8c-sc-7zY" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" constant="16" id="LZd-U4-2qu"/>
-                            <constraint firstItem="JPZ-dY-dV6" firstAttribute="top" secondItem="fwA-FM-Uk6" secondAttribute="bottom" constant="18.5" id="Lfk-vN-3lP"/>
-                            <constraint firstAttribute="trailing" secondItem="aEi-lY-Xal" secondAttribute="trailing" constant="16" id="MBe-oh-zEO"/>
-                            <constraint firstItem="fwA-FM-Uk6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="16" id="MU6-Xz-iXc"/>
-                            <constraint firstItem="h8c-sc-7zY" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="152" id="QSP-8C-TuW"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="oa7-Bi-4np" secondAttribute="bottom" constant="66" id="R3s-LT-BEt"/>
-                            <constraint firstItem="h8c-sc-7zY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="16" id="foF-at-Sbp"/>
-                            <constraint firstItem="aEi-lY-Xal" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="hY9-UV-Cq0"/>
-                            <constraint firstItem="aEi-lY-Xal" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="209" id="qKN-OS-XoC"/>
-                            <constraint firstItem="JPZ-dY-dV6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="16" id="rtJ-Et-X0i"/>
-                            <constraint firstAttribute="trailing" secondItem="oa7-Bi-4np" secondAttribute="trailing" constant="16" id="tJ7-PN-ZdM"/>
-                            <constraint firstItem="hsp-XC-EuJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="16" id="x92-6P-6Vd"/>
-                            <constraint firstItem="fwA-FM-Uk6" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="z8s-M4-d5e"/>
-                            <constraint firstItem="oa7-Bi-4np" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="zHw-yW-cVS"/>
-                        </constraints>
                     </view>
                     <connections>
                         <outlet property="descriptionLabel" destination="aEi-lY-Xal" id="1CV-ay-ENF"/>
@@ -111,8 +79,8 @@
                         <outlet property="navigationBar" destination="g22-Ac-yAw" id="rqj-IR-hqC"/>
                         <outlet property="reverseButton" destination="oa7-Bi-4np" id="fYQ-HX-dFc"/>
                         <outlet property="reverseWordsLabel" destination="h8c-sc-7zY" id="U7d-Bg-Ucp"/>
-                        <outlet property="textInput" destination="fwA-FM-Uk6" id="4BD-0c-bHH"/>
-                        <outlet property="textOutput" destination="hsp-XC-EuJ" id="26n-Wx-uqa"/>
+                        <outlet property="textInput" destination="QvS-qC-Mrx" id="JKd-7b-wq2"/>
+                        <outlet property="textOutput" destination="DRD-eo-fGM" id="FoU-Wc-97A"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -121,8 +89,8 @@
         </scene>
     </scenes>
     <resources>
-        <systemColor name="linkColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
