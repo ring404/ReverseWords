@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, UINavigationBarDelegate, UITextViewDelegate {
+class ViewController: UIViewController, UINavigationBarDelegate, UITextViewDelegate, UITextFieldDelegate {
     // MARK: - Outlets
     @IBOutlet private weak var dividerView: UIView! {
         didSet {
@@ -27,10 +27,11 @@ class ViewController: UIViewController, UINavigationBarDelegate, UITextViewDeleg
     }
     @IBOutlet private weak var navigationBar: UINavigationBar!
 
-    @IBOutlet weak var textInput: UITextView! {
+    @IBOutlet weak var textInput: UITextField! {
         didSet {
             textInput.font = UsedFonts.inputFont
             textInput.textColor = UsedColors.inputTextInactiveColor
+            textInput.text = "Text to reverse"
                 }
     }
     @IBOutlet weak var textOutput: UITextView! {
@@ -46,8 +47,21 @@ class ViewController: UIViewController, UINavigationBarDelegate, UITextViewDeleg
         }
     }
     // MARK: - Actions
+    @IBAction func didBeginEditing(_ sender: UITextField) {
+        dividerView.backgroundColor = UsedColors.dividerActiveColor
+        if sender.text == "Text to reverse" {
+            sender.text = ""
+            sender.textColor = UsedColors.inputTextActiveColor
+        }
+    }
+    @IBAction func editingDidEnd(_ sender: UITextField) {
+        if sender.text != "" && reverseButton.currentTitle != ButtonConditions.clear {
+            reverseButton.isHighlighted = false
+            dividerView.backgroundColor = UsedColors.dividerNonActiveColor
+        }
+    }
     @IBAction private func buttonPressed(_ sender: UIButton) {
-        buttonBehaviourManager(sender)
+        buttonBehaviourManager()
     }
     // MARK: - Methods
     override func viewDidLoad() {
@@ -62,25 +76,24 @@ class ViewController: UIViewController, UINavigationBarDelegate, UITextViewDeleg
         UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.font : UsedFonts.labelFont!]
     }
     func position(for bar: UIBarPositioning) -> UIBarPosition { return .topAttached }
-    private func buttonBehaviourManager(_ sender: UIButton) {
+    private func buttonBehaviourManager() {
         if textInput.text != "" {
             textOutput.text = ReverseStringManager.reverseString(text: textInput.text ?? "")
             makeViewAutoHeight(textOutput)
-            sender.setTitle(ButtonConditions.clear, for: .normal)
+            reverseButton.setTitle(ButtonConditions.clear, for: .normal)
         }
-        if sender.titleLabel?.text == ButtonConditions.clear {
+        if reverseButton.titleLabel?.text == ButtonConditions.clear {
             textInput.text = ""
             textOutput.text = ""
-            sender.setTitle(ButtonConditions.reverse, for: .normal)
-            setConstraints()
-            dividerView.backgroundColor = UsedColors.dividerNonActiveColor
+            reverseButton.setTitle(ButtonConditions.reverse, for: .normal)
+            dividerView.backgroundColor = UsedColors.dividerActiveColor
         }
     }
     private func keyboardHidingManager () {
         let tap = UITapGestureRecognizer(target: view, action: #selector(UIView.endEditing))
         view.addGestureRecognizer(tap)
     }
-    func setConstraints () {
+    private func setConstraints () {
         let parent = self.view!
         reverseWordsLabelConstraints(parent)
         descriptionLabelConstraints(parent)
@@ -108,14 +121,14 @@ class ViewController: UIViewController, UINavigationBarDelegate, UITextViewDeleg
         textInput.heightAnchor.constraint(equalToConstant: 22).isActive = true
         textInput.leadingAnchor.constraint(equalTo: parent.leadingAnchor, constant: 16).isActive = true
         textInput.trailingAnchor.constraint(equalTo: parent.trailingAnchor, constant: -16).isActive = true
-        textInput.topAnchor.constraint(equalTo: descriptionLabel.bottomAnchor, constant: 40).isActive = true
+        textInput.topAnchor.constraint(equalTo: descriptionLabel.bottomAnchor, constant: 59).isActive = true
     }
     fileprivate func dividerViewConstraints(_ parent: UIView) {
         dividerView.translatesAutoresizingMaskIntoConstraints = false
         dividerView.heightAnchor.constraint(equalToConstant: 0.5).isActive = true
         dividerView.leadingAnchor.constraint(equalTo: parent.leadingAnchor, constant: 16).isActive = true
         dividerView.trailingAnchor.constraint(equalTo: parent.trailingAnchor, constant: -16).isActive = true
-        dividerView.topAnchor.constraint(equalTo: textInput.bottomAnchor, constant: 1).isActive = true
+        dividerView.topAnchor.constraint(equalTo: textInput.bottomAnchor, constant: 18.5).isActive = true
     }
     fileprivate func textOutputConstraints(_ parent: UIView) {
         textOutput.translatesAutoresizingMaskIntoConstraints = false
@@ -131,30 +144,15 @@ class ViewController: UIViewController, UINavigationBarDelegate, UITextViewDeleg
         reverseButton.trailingAnchor.constraint(equalTo: parent.trailingAnchor, constant: -13).isActive = true
         reverseButton.bottomAnchor.constraint(equalTo: parent.bottomAnchor, constant: -60).isActive = true
     }
-    func textViewDidChange(_ textView: UITextView) {
-        dividerView.backgroundColor = UsedColors.dividerActiveColor
-        makeViewAutoHeight(textView)
-    }
-    func textViewDidBeginEditing(_ textView: UITextView) {
-        dividerView.backgroundColor = UsedColors.dividerActiveColor
-    }
-    func textViewDidEndEditing(_ textView: UITextView) {
-        makeViewAutoHeight(textView)
-        if textView.text != "" {
-            reverseButton.setTitle(ButtonConditions.reverse, for: .normal)
-        }
-    }
-    func textViewShouldBeginEditing(_ textView: UITextView) -> Bool {
-        if textView.text == "Text to reverse" {
-            textView.text = ""
-            textView.textColor = UsedColors.inputTextActiveColor
-        }
-        return true
-    }
-    func makeViewAutoHeight(_ textView: UITextView) {
+    private func makeViewAutoHeight(_ textView: UITextView) {
         textView.translatesAutoresizingMaskIntoConstraints = true
         textView.sizeToFit()
         textView.frame.size.width = 343
+    }
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        buttonBehaviourManager()
+        view.endEditing(true)
+        return true
     }
 }
 
@@ -166,7 +164,7 @@ extension UIViewController {
         static let outputFont = UIFont(name: "SFProDisplay-Regular", size: 24)
     }
     enum UsedColors {
-        static let dividerNonActiveColor = UIColor(red: 0.129, green: 0.129, blue: 0.129, alpha: 1)
+        static let dividerNonActiveColor = UIColor(red: 0.129, green: 0.129, blue: 0.129, alpha: 0.2)
         static let dividerActiveColor = UIColor(red: 0, green: 0.478, blue: 1, alpha: 1)
         static let labelTextColor = UIColor(red: 0.235, green: 0.235, blue: 0.263, alpha: 0.6)
         static let inputTextInactiveColor = UIColor(red: 0.235, green: 0.235, blue: 0.263, alpha: 0.3)

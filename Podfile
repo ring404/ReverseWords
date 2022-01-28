@@ -1,4 +1,4 @@
-target 'ReverseWords' do
-  use_frameworks!
-pod 'IQKeyboardManagerSwift'
-end
+#target 'ReverseWords' do
+#  use_frameworks!
+#pod 'IQKeyboardManagerSwift'
+#end
