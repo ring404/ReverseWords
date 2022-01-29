@@ -42,8 +42,8 @@ class ViewController: UIViewController, UINavigationBarDelegate, UITextViewDeleg
     }
     @IBOutlet private weak var reverseButton: UIButton! {
         didSet {
-            reverseButton.setTitleColor(.white, for: .highlighted)
-            reverseButton.isHighlighted = true
+            reverseButton.setTitleColor(.white, for: .normal)
+            reverseButton.tintColor = UsedColors.reverseButtonInactive
         }
     }
     // MARK: - Actions
@@ -56,7 +56,7 @@ class ViewController: UIViewController, UINavigationBarDelegate, UITextViewDeleg
     }
     @IBAction func editingDidEnd(_ sender: UITextField) {
         if sender.text != "" && reverseButton.currentTitle != ButtonConditions.clear {
-            reverseButton.isHighlighted = false
+            reverseButton.tintColor = UsedColors.reserseButtonActive
             dividerView.backgroundColor = UsedColors.dividerNonActiveColor
         }
     }
@@ -77,16 +77,20 @@ class ViewController: UIViewController, UINavigationBarDelegate, UITextViewDeleg
     }
     func position(for bar: UIBarPositioning) -> UIBarPosition { return .topAttached }
     private func buttonBehaviourManager() {
-        if textInput.text != "" {
+        if textInput.text != "" && textInput.text != "Text to reverse" {
             textOutput.text = ReverseStringManager.reverseString(text: textInput.text ?? "")
             makeViewAutoHeight(textOutput)
             reverseButton.setTitle(ButtonConditions.clear, for: .normal)
+            reverseButton.tintColor = UsedColors.reserseButtonActive
+            dividerView.backgroundColor = UsedColors.dividerNonActiveColor
         }
         if reverseButton.titleLabel?.text == ButtonConditions.clear {
             textInput.text = ""
             textOutput.text = ""
             reverseButton.setTitle(ButtonConditions.reverse, for: .normal)
-            dividerView.backgroundColor = UsedColors.dividerActiveColor
+            reverseButton.tintColor = UsedColors.reverseButtonInactive
+            textInput.text = "Text to reverse"
+            textInput.textColor = UsedColors.inputTextInactiveColor
         }
     }
     private func keyboardHidingManager () {
@@ -148,6 +152,7 @@ class ViewController: UIViewController, UINavigationBarDelegate, UITextViewDeleg
         textView.translatesAutoresizingMaskIntoConstraints = true
         textView.sizeToFit()
         textView.frame.size.width = 343
+        textView.frame.size.height = 300
     }
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         buttonBehaviourManager()
@@ -170,6 +175,8 @@ extension UIViewController {
         static let inputTextInactiveColor = UIColor(red: 0.235, green: 0.235, blue: 0.263, alpha: 0.3)
         static let inputTextActiveColor = UIColor(red: 0.235, green: 0.235, blue: 0.263, alpha: 1)
         static let outputTextColor = UIColor(red: 0, green: 0.478, blue: 1, alpha: 1)
+        static let reverseButtonInactive = UIColor(red: 0, green: 0.478, blue: 1, alpha: 0.6)
+        static let reserseButtonActive = UIColor(red: 0, green: 0.478, blue: 1, alpha: 1)
     }
     enum ButtonConditions {
         static let clear = "Clear"
