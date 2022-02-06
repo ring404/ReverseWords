@@ -54,14 +54,6 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="tintColor"/>
                             </view>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="DRD-eo-fGM" userLabel="Text Output">
-                                <rect key="frame" x="36" y="501" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <color key="textColor" systemColor="labelColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oa7-Bi-4np">
                                 <rect key="frame" x="16" y="770" width="396" height="56"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -71,6 +63,26 @@
                                     <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KmU-sG-YHM"/>
                                 </connections>
                             </button>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hI3-6z-ZGe">
+                                <rect key="frame" x="36" y="501" width="372" height="261"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" scrollEnabled="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="DRD-eo-fGM" userLabel="Text Output">
+                                        <rect key="frame" x="0.0" y="0.0" width="372" height="261"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="textColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="DRD-eo-fGM" firstAttribute="top" secondItem="hI3-6z-ZGe" secondAttribute="top" id="IrL-p5-dqA"/>
+                                    <constraint firstAttribute="trailing" secondItem="DRD-eo-fGM" secondAttribute="trailing" id="Q2k-qJ-QaJ"/>
+                                    <constraint firstAttribute="bottom" secondItem="DRD-eo-fGM" secondAttribute="bottom" id="URo-Mg-gso"/>
+                                    <constraint firstItem="DRD-eo-fGM" firstAttribute="leading" secondItem="hI3-6z-ZGe" secondAttribute="leading" id="eWA-4X-vGx"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="jjA-B6-buz"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="qec-P0-Vp5"/>
+                            </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -83,6 +95,7 @@
                         <outlet property="reverseWordsLabel" destination="h8c-sc-7zY" id="U7d-Bg-Ucp"/>
                         <outlet property="textInput" destination="Hbb-Gq-ycA" id="6KR-Sf-1Sh"/>
                         <outlet property="textOutput" destination="DRD-eo-fGM" id="FoU-Wc-97A"/>
+                        <outlet property="textOutputScrollView" destination="hI3-6z-ZGe" id="p4Z-8o-5yA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
