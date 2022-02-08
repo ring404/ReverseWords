@@ -35,7 +35,6 @@ class ViewController: UIViewController, UINavigationBarDelegate, UITextViewDeleg
 
                 }
     }
-    @IBOutlet weak var textOutputScrollView: UIScrollView!
     @IBOutlet weak var textOutput: UITextView! {
         didSet {
             textOutput.font = UsedFonts.outputFont
@@ -111,7 +110,6 @@ class ViewController: UIViewController, UINavigationBarDelegate, UITextViewDeleg
         descriptionLabelConstraints(parent)
         textInputConstraints(parent)
         dividerViewConstraints(parent)
-        textOutputScrollViewConstraints(parent)
         textOutputConstraints(parent)
         reverseButtonConstraints(parent)
     }
@@ -143,16 +141,12 @@ class ViewController: UIViewController, UINavigationBarDelegate, UITextViewDeleg
         dividerView.trailingAnchor.constraint(equalTo: parent.trailingAnchor, constant: -16).isActive = true
         dividerView.topAnchor.constraint(equalTo: textInput.bottomAnchor, constant: 18.5).isActive = true
     }
-    fileprivate func textOutputScrollViewConstraints(_ parent: UIView) {
-        textOutputScrollView.translatesAutoresizingMaskIntoConstraints = false
-        textOutputScrollView.leadingAnchor.constraint(equalTo: parent.leadingAnchor, constant: 16).isActive = true
-        textOutputScrollView.trailingAnchor.constraint(equalTo: parent.trailingAnchor, constant: 16).isActive = true
-        textOutputScrollView.bottomAnchor.constraint(equalTo: reverseButton.topAnchor, constant: -10).isActive = true
-        textOutputScrollView.topAnchor.constraint(equalTo: dividerView.bottomAnchor, constant: 24.5).isActive = true
-    }
     fileprivate func textOutputConstraints(_ parent: UIView) {
-        textOutput.leadingAnchor.constraint(equalTo: textOutputScrollView.leadingAnchor, constant: 16.0).isActive = true
-        textOutput.topAnchor.constraint(equalTo: textOutputScrollView.topAnchor, constant: 16.0).isActive = true
+        textOutput.translatesAutoresizingMaskIntoConstraints = false
+        textOutput.leadingAnchor.constraint(equalTo: parent.leadingAnchor, constant: 16).isActive = true
+        textOutput.trailingAnchor.constraint(equalTo: parent.trailingAnchor, constant: 16).isActive = true
+        textOutput.bottomAnchor.constraint(equalTo: reverseButton.topAnchor, constant: -10).isActive = true
+        textOutput.topAnchor.constraint(equalTo: dividerView.bottomAnchor, constant: 24.5).isActive = true
     }
     fileprivate func reverseButtonConstraints(_ parent: UIView) {
         reverseButton.translatesAutoresizingMaskIntoConstraints = false
@@ -163,7 +157,7 @@ class ViewController: UIViewController, UINavigationBarDelegate, UITextViewDeleg
     }
     private func makeViewAutoHeight(_ textView: UITextView) {
         textView.translatesAutoresizingMaskIntoConstraints = true
-        textView.sizeToFit()
+//        textView.sizeToFit()
         textView.frame.size.width = 343
     }
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
