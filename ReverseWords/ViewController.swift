@@ -46,6 +46,7 @@ class ViewController: UIViewController, UINavigationBarDelegate, UITextViewDeleg
         didSet {
             reverseButton.setTitleColor(.white, for: .normal)
             reverseButton.tintColor = UsedColors.reverseButtonInactive
+            reverseButton.isUserInteractionEnabled = false
         }
     }
     // MARK: - Actions
@@ -59,7 +60,12 @@ class ViewController: UIViewController, UINavigationBarDelegate, UITextViewDeleg
     @IBAction func editingDidChanged(_ sender: UITextField) {
         if sender.text != "" && reverseButton.currentTitle != ButtonConditions.clear {
             reverseButton.tintColor = UsedColors.reserseButtonActive
+            reverseButton.isUserInteractionEnabled = true
             dividerView.backgroundColor = UsedColors.dividerNonActiveColor
+        } else {
+            reverseButton.setTitleColor(.white, for: .normal)
+            reverseButton.tintColor = UsedColors.reverseButtonInactive
+            reverseButton.isUserInteractionEnabled = false
         }
     }
     @IBAction private func buttonPressed(_ sender: UIButton) {
@@ -84,6 +90,7 @@ class ViewController: UIViewController, UINavigationBarDelegate, UITextViewDeleg
             makeViewAutoHeight(textOutput)
             reverseButton.setTitle(ButtonConditions.clear, for: .normal)
             reverseButton.tintColor = UsedColors.reserseButtonActive
+            reverseButton.isUserInteractionEnabled = true
             dividerView.backgroundColor = UsedColors.dividerNonActiveColor
         }
         if reverseButton.titleLabel?.text == ButtonConditions.clear {
@@ -91,6 +98,7 @@ class ViewController: UIViewController, UINavigationBarDelegate, UITextViewDeleg
             textOutput.text = ""
             reverseButton.setTitle(ButtonConditions.reverse, for: .normal)
             reverseButton.tintColor = UsedColors.reverseButtonInactive
+            reverseButton.isUserInteractionEnabled = false
         }
     }
     private func keyboardHidingManager () {
