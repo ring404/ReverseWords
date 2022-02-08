@@ -46,7 +46,7 @@
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                                 <connections>
                                     <action selector="didBeginEditing:" destination="BYZ-38-t0r" eventType="editingDidBegin" id="mOh-W7-lbI"/>
-                                    <action selector="editingDidEnd:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="Qyw-lI-e9G"/>
+                                    <action selector="editingDidChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="3vs-xC-aKj"/>
                                 </connections>
                             </textField>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JPZ-dY-dV6" userLabel="dividerView">

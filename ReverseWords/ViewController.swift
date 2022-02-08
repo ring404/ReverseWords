@@ -31,7 +31,8 @@ class ViewController: UIViewController, UINavigationBarDelegate, UITextViewDeleg
         didSet {
             textInput.font = UsedFonts.inputFont
             textInput.textColor = UsedColors.inputTextInactiveColor
-            textInput.text = "Text to reverse"
+            textInput.attributedPlaceholder = NSAttributedString(string: "Text to reverse", attributes: [NSAttributedString.Key.foregroundColor: UsedColors.inputTextInactiveColor, NSAttributedString.Key.font: UsedFonts.inputFont!])
+
                 }
     }
     @IBOutlet weak var textOutputScrollView: UIScrollView!
@@ -50,12 +51,12 @@ class ViewController: UIViewController, UINavigationBarDelegate, UITextViewDeleg
     // MARK: - Actions
     @IBAction func didBeginEditing(_ sender: UITextField) {
         dividerView.backgroundColor = UsedColors.dividerActiveColor
-        if sender.text == "Text to reverse" {
+        if sender.placeholder?.isEmpty == false {
             sender.text = ""
             sender.textColor = UsedColors.inputTextActiveColor
         }
     }
-    @IBAction func editingDidEnd(_ sender: UITextField) {
+    @IBAction func editingDidChanged(_ sender: UITextField) {
         if sender.text != "" && reverseButton.currentTitle != ButtonConditions.clear {
             reverseButton.tintColor = UsedColors.reserseButtonActive
             dividerView.backgroundColor = UsedColors.dividerNonActiveColor
@@ -78,7 +79,7 @@ class ViewController: UIViewController, UINavigationBarDelegate, UITextViewDeleg
     }
     func position(for bar: UIBarPositioning) -> UIBarPosition { return .topAttached }
     private func buttonBehaviourManager() {
-        if textInput.text != "" && textInput.text != "Text to reverse" {
+        if textInput.text != "" {
             textOutput.text = ReverseStringManager.reverseString(text: textInput.text ?? "")
             makeViewAutoHeight(textOutput)
             reverseButton.setTitle(ButtonConditions.clear, for: .normal)
@@ -90,8 +91,6 @@ class ViewController: UIViewController, UINavigationBarDelegate, UITextViewDeleg
             textOutput.text = ""
             reverseButton.setTitle(ButtonConditions.reverse, for: .normal)
             reverseButton.tintColor = UsedColors.reverseButtonInactive
-            textInput.text = "Text to reverse"
-            textInput.textColor = UsedColors.inputTextInactiveColor
         }
     }
     private func keyboardHidingManager () {
