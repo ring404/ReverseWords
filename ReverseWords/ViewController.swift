@@ -57,14 +57,17 @@ class ViewController: UIViewController, UINavigationBarDelegate, UITextViewDeleg
         }
     }
     @IBAction func editingDidChanged(_ sender: UITextField) {
-        if sender.text != "" && reverseButton.currentTitle != ButtonConditions.clear {
+        if sender.text != ""
+            && reverseButton.currentTitle != ButtonConditions.clear {
             reverseButton.tintColor = UsedColors.reserseButtonActive
             reverseButton.isUserInteractionEnabled = true
             dividerView.backgroundColor = UsedColors.dividerNonActiveColor
         } else {
+            if textOutput.text == "" {
             reverseButton.setTitleColor(.white, for: .normal)
             reverseButton.tintColor = UsedColors.reverseButtonInactive
             reverseButton.isUserInteractionEnabled = false
+            }
         }
     }
     @IBAction private func buttonPressed(_ sender: UIButton) {
