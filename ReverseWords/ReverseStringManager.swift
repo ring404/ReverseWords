@@ -8,7 +8,7 @@
 import Foundation
 
 class ReverseStringManager {
-    static func reverseString(text:String) -> String {
-        return text.split(separator: " ").map({String($0.reversed())}).joined(separator: " ")
+     func reverseString(text:String, separator: Character = " ") -> String {
+        return text.split(separator: separator).map({String($0.reversed())}).joined(separator: String(separator))
     }
 }
