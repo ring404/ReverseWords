@@ -16,7 +16,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "141"
             endingLineNumber = "141"
-            landmarkName = "makeKeyboardHideOnTap()"
+            landmarkName = "keyboardHidingManager()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -33,6 +33,22 @@
             startingLineNumber = "81"
             endingLineNumber = "81"
             landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "73C3EA40-BFCA-4419-982E-C60B9B279413"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ReverseWords/MainViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "138"
+            endingLineNumber = "138"
+            landmarkName = "setUpCurrentState(trigger:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

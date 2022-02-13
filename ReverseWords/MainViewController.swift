@@ -10,12 +10,12 @@ class MainViewController: UIViewController {
     
     //MARK: - Properties
     
-    var currentState: State = .initial {
+    private var currentState: State = .initial {
         didSet {
             updateUIAccordingToNewState()
         }
     }
-    let reverseStringManager = ReverseStringManager.init()
+    private let reverseStringManager = ReverseStringManager()
     
     // MARK: - Outlets
     
@@ -39,13 +39,10 @@ class MainViewController: UIViewController {
     
     @IBOutlet private weak var textInput: UITextField! {
         didSet {
-            self.textInput.delegate = self
+            textInput.delegate = self
             textInput.font = Font.regular
             textInput.textColor = Color.inputTextInactive
-            textInput.attributedPlaceholder = NSAttributedString(
-                string: "Text to reverse",
-                attributes: [NSAttributedString.Key.foregroundColor: Color.inputTextInactive,
-                             NSAttributedString.Key.font: Font.regular])
+            textInput.attributedPlaceholder = Placeholder.attributed
             
         }
     }
@@ -66,10 +63,11 @@ class MainViewController: UIViewController {
     // MARK: - Actions
     
     @IBAction private func editingDidChanged(_ sender: UITextField) {
-        determineCurrentState(trigger: .textChanged)
+        setUpCurrentState(trigger: .textChanged)
     }
+    
     @IBAction private func buttonPressed(_ sender: UIButton) {
-        determineCurrentState(trigger: .buttonPressed)
+        setUpCurrentState(trigger: .buttonPressed)
     }
     
     // MARK: - Lifecycle
@@ -84,8 +82,8 @@ class MainViewController: UIViewController {
     // MARK: - Methods
     
     private func updateUIAccordingToNewState() {
-        switch currentState {
-        case .initial:
+        
+        func setUpIniTialState() {
             textInput.text?.removeAll()
             textOutput.text.removeAll()
             dividerView.backgroundColor = Color.dividerNonActive
@@ -93,26 +91,42 @@ class MainViewController: UIViewController {
             reverseButton.tintColor = Color.reverseButtonInactive
             reverseButton.isUserInteractionEnabled = false
             reverseButton.setTitle(ButtonTitle.reverse, for: .normal)
-        case .input:
+        }
+        
+        func setUpInputState() {
             textInput.textColor = Color.inputTextActive
             dividerView.backgroundColor = Color.dividerActive
             reverseButton.tintColor = Color.reserseButtonActive
             reverseButton.isUserInteractionEnabled = true
             reverseButton.setTitle(ButtonTitle.reverse, for: .normal)
-        case .result(let reversedtext):
+        }
+        
+        func setUpResultState(_ reversedText:String) {
             dividerView.backgroundColor = Color.dividerNonActive
             reverseButton.setTitle(ButtonTitle.clear, for: .normal)
-            textOutput.text = reversedtext
+            textOutput.text = reversedText
+        }
+        
+        switch currentState {
+        case .initial:
+           setUpIniTialState()
+            
+        case .input:
+           setUpInputState()
+            
+        case .result(let reversedText):
+            setUpResultState(reversedText)
         }
     }
     
-    private func determineCurrentState(trigger: Trigger) {
+    private func setUpCurrentState(trigger: Trigger) {
         
         switch currentState {
         case .initial:
             if !(textInput.text?.isEmpty ?? false) {
                 currentState = .input
             }
+            
         case .input:
             switch trigger {
             case .buttonPressed:
@@ -120,16 +134,19 @@ class MainViewController: UIViewController {
                     let reversedStringValue = reverseStringManager.reverseString(text: textInput.text ?? "")
                     currentState = .result(reversedtext: reversedStringValue)
                 }
+                
             case .textChanged:
                 if textInput.text?.isEmpty ?? false {
                     currentState = .initial
                 }
             }
+            
         case .result(reversedtext: let reversedtext):
             textOutput.text = reversedtext
             switch trigger {
             case .buttonPressed:
                 currentState = .initial
+                
             case .textChanged:
                 if !(textInput.text?.isEmpty ?? false) {
                     currentState = .input
@@ -137,64 +154,62 @@ class MainViewController: UIViewController {
             }
         }
     }
-    private func keyboardHidingManager () {
-        let tap = UITapGestureRecognizer(target: view, action: #selector(UIView.endEditing))
-        view.addGestureRecognizer(tap)
-    }
+    
     private func setConstraints () {
-        reverseWordsLabelConstraints(view)
-        descriptionLabelConstraints(view)
-        textInputConstraints(view)
-        dividerViewConstraints(view)
-        textOutputConstraints(view)
-        reverseButtonConstraints(view)
+        reverseWordsLabelConstraints()
+        descriptionLabelConstraints()
+        textInputConstraints()
+        dividerViewConstraints()
+        textOutputConstraints()
+        reverseButtonConstraints()
     }
-    fileprivate func reverseWordsLabelConstraints(_ parent: UIView) {
+    fileprivate func reverseWordsLabelConstraints() {
         reverseWordsLabel.translatesAutoresizingMaskIntoConstraints = false
         reverseWordsLabel.topAnchor.constraint(equalTo: navigationBar.bottomAnchor, constant: 64).isActive = true
         reverseWordsLabel.heightAnchor.constraint(equalToConstant: 41).isActive = true
-        reverseWordsLabel.leadingAnchor.constraint(equalTo: parent.leadingAnchor, constant: 16).isActive = true
-        reverseWordsLabel.trailingAnchor.constraint(equalTo: parent.trailingAnchor, constant: -16).isActive = true
+        reverseWordsLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16).isActive = true
+        reverseWordsLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16).isActive = true
     }
-    fileprivate func descriptionLabelConstraints(_ parent: UIView) {
+    fileprivate func descriptionLabelConstraints() {
         descriptionLabel.translatesAutoresizingMaskIntoConstraints = false
         descriptionLabel.heightAnchor.constraint(equalToConstant: 44).isActive = true
-        descriptionLabel.leadingAnchor.constraint(equalTo: parent.leadingAnchor, constant: 33).isActive = true
-        descriptionLabel.trailingAnchor.constraint(equalTo: parent.trailingAnchor, constant: -34).isActive = true
+        descriptionLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 33).isActive = true
+        descriptionLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -34).isActive = true
         descriptionLabel.topAnchor.constraint(equalTo: reverseWordsLabel.bottomAnchor, constant: 16).isActive = true
     }
-    fileprivate func textInputConstraints(_ parent: UIView) {
+    fileprivate func textInputConstraints() {
         textInput.translatesAutoresizingMaskIntoConstraints = false
         textInput.heightAnchor.constraint(equalToConstant: 22).isActive = true
-        textInput.leadingAnchor.constraint(equalTo: parent.leadingAnchor, constant: 16).isActive = true
-        textInput.trailingAnchor.constraint(equalTo: parent.trailingAnchor, constant: -16).isActive = true
+        textInput.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16).isActive = true
+        textInput.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16).isActive = true
         textInput.topAnchor.constraint(equalTo: descriptionLabel.bottomAnchor, constant: 59).isActive = true
     }
-    fileprivate func dividerViewConstraints(_ parent: UIView) {
+    fileprivate func dividerViewConstraints() {
         dividerView.translatesAutoresizingMaskIntoConstraints = false
         dividerView.heightAnchor.constraint(equalToConstant: 0.5).isActive = true
-        dividerView.leadingAnchor.constraint(equalTo: parent.leadingAnchor, constant: 16).isActive = true
-        dividerView.trailingAnchor.constraint(equalTo: parent.trailingAnchor, constant: -16).isActive = true
+        dividerView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16).isActive = true
+        dividerView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16).isActive = true
         dividerView.topAnchor.constraint(equalTo: textInput.bottomAnchor, constant: 18.5).isActive = true
     }
-    fileprivate func textOutputConstraints(_ parent: UIView) {
+    fileprivate func textOutputConstraints() {
         textOutput.translatesAutoresizingMaskIntoConstraints = false
-        textOutput.leadingAnchor.constraint(equalTo: parent.leadingAnchor, constant: 16).isActive = true
-        textOutput.trailingAnchor.constraint(equalTo: parent.trailingAnchor, constant: 16).isActive = true
-        textOutput.bottomAnchor.constraint(equalTo: reverseButton.topAnchor, constant: -10).isActive = true
+        textOutput.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16).isActive = true
+        textOutput.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16).isActive = true
         textOutput.topAnchor.constraint(equalTo: dividerView.bottomAnchor, constant: 24.5).isActive = true
-        textOutput.widthAnchor.constraint(equalToConstant: 343).isActive = true
     }
-    fileprivate func reverseButtonConstraints(_ parent: UIView) {
+    fileprivate func reverseButtonConstraints() {
         reverseButton.translatesAutoresizingMaskIntoConstraints = false
         reverseButton.heightAnchor.constraint(equalToConstant: 60).isActive = true
-        reverseButton.leadingAnchor.constraint(equalTo: parent.leadingAnchor, constant: 13).isActive = true
-        reverseButton.trailingAnchor.constraint(equalTo: parent.trailingAnchor, constant: -13).isActive = true
-        reverseButton.bottomAnchor.constraint(equalTo: parent.bottomAnchor, constant: -60).isActive = true
+        reverseButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 13).isActive = true
+        reverseButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -13).isActive = true
+        reverseButton.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -60).isActive = true
+        reverseButton.topAnchor.constraint(equalTo: textOutput.bottomAnchor, constant: 10).isActive = true
     }
 }
 
-extension MainViewController {
+// MARK: - Constants
+
+private extension MainViewController {
     enum Font {
         static let header:UIFont = UIFont.main(weight: .bold, size: 34)
         static let regular:UIFont = UIFont.main(size: 17)
@@ -214,6 +229,24 @@ extension MainViewController {
         static let clear = "Clear"
         static let reverse = "Reverse"
     }
+    enum Placeholder {
+        static let textColor = Color.inputTextInactive
+        static let font = Font.regular
+        static let text = "Text to reverse"
+        static let attributed = NSAttributedString(
+            string: text,
+            attributes: [
+                NSAttributedString.Key.foregroundColor: textColor,
+                NSAttributedString.Key.font: font
+            ]
+        )
+    }
+}
+
+// MARK: - Models
+
+private extension MainViewController {
+    
     enum State {
         case initial
         case input
@@ -225,27 +258,7 @@ extension MainViewController {
     }
 }
 
-extension UIFont {
-    static func main(weight: Weight = .regular, size: CGFloat) -> UIFont {
-        switch weight {
-        case .bold:
-            return UIFont(name: "SFProDisplay-Bold", size: size) ?? UIFont.systemFont(ofSize: size, weight: .bold)
-        default:
-            return UIFont(name: "SFProDisplay-Regular", size: size) ?? UIFont.systemFont(ofSize: size)
-        }
-    }
-}
-
-extension UIViewController {
-    func makeKeyboardHideOnTap() {
-        let tap = UITapGestureRecognizer(target: self, action: #selector(handleTapOnView))
-        tap.cancelsTouchesInView = false
-        view.addGestureRecognizer(tap)
-    }
-    @objc func handleTapOnView() {
-        view.endEditing(true)
-    }
-}
+// MARK: - Navigation bar delegate
 
 extension MainViewController: UINavigationBarDelegate {
     private func adjustNavBar () {
@@ -257,9 +270,11 @@ extension MainViewController: UINavigationBarDelegate {
     }
 }
 
+// MARK: - Text field delegate
+
 extension MainViewController: UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        determineCurrentState(trigger: .buttonPressed)
+        setUpCurrentState(trigger: .buttonPressed)
         view.endEditing(true)
         return true
     }

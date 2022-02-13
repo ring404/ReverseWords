@@ -8,9 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		DE39FC812769F49C003CD1B7 /* ReverseStringManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE39FC802769F49C003CD1B7 /* ReverseStringManager.swift */; };
+		DE651BB527B9002700A47114 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE651BB427B9002700A47114 /* Extensions.swift */; };
 		DEE90644273B0E91006D252E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE90643273B0E91006D252E /* AppDelegate.swift */; };
 		DEE90646273B0E91006D252E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE90645273B0E91006D252E /* SceneDelegate.swift */; };
-		DEE90648273B0E91006D252E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE90647273B0E91006D252E /* ViewController.swift */; };
+		DEE90648273B0E91006D252E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE90647273B0E91006D252E /* MainViewController.swift */; };
 		DEE9064B273B0E91006D252E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEE90649273B0E91006D252E /* Main.storyboard */; };
 		DEE9064D273B0E96006D252E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEE9064C273B0E96006D252E /* Assets.xcassets */; };
 		DEEA7A8B2752567400E791B3 /* SFPRODISPLAYBOLD.OTF in Resources */ = {isa = PBXBuildFile; fileRef = DEEA7A892752567300E791B3 /* SFPRODISPLAYBOLD.OTF */; };
@@ -19,10 +20,11 @@
 
 /* Begin PBXFileReference section */
 		DE39FC802769F49C003CD1B7 /* ReverseStringManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReverseStringManager.swift; sourceTree = "<group>"; };
+		DE651BB427B9002700A47114 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		DEE90640273B0E91006D252E /* ReverseWords.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReverseWords.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEE90643273B0E91006D252E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DEE90645273B0E91006D252E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DEE90647273B0E91006D252E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DEE90647273B0E91006D252E /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		DEE9064A273B0E91006D252E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DEE9064C273B0E96006D252E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DEE90651273B0E96006D252E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -44,6 +46,7 @@
 		DEA71EF9276121C2005573E8 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				DE651BB427B9002700A47114 /* Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -81,7 +84,7 @@
 				DEE90643273B0E91006D252E /* AppDelegate.swift */,
 				DEE90645273B0E91006D252E /* SceneDelegate.swift */,
 				DE39FC802769F49C003CD1B7 /* ReverseStringManager.swift */,
-				DEE90647273B0E91006D252E /* ViewController.swift */,
+				DEE90647273B0E91006D252E /* MainViewController.swift */,
 				DEE90649273B0E91006D252E /* Main.storyboard */,
 				DEE9064C273B0E96006D252E /* Assets.xcassets */,
 				DEE90651273B0E96006D252E /* Info.plist */,
@@ -182,8 +185,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE651BB527B9002700A47114 /* Extensions.swift in Sources */,
 				DE39FC812769F49C003CD1B7 /* ReverseStringManager.swift in Sources */,
-				DEE90648273B0E91006D252E /* ViewController.swift in Sources */,
+				DEE90648273B0E91006D252E /* MainViewController.swift in Sources */,
 				DEE90644273B0E91006D252E /* AppDelegate.swift in Sources */,
 				DEE90646273B0E91006D252E /* SceneDelegate.swift in Sources */,
 			);
