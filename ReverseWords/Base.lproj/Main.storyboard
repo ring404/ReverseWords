@@ -42,6 +42,7 @@
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Hbb-Gq-ycA" userLabel="Text Input">
                                 <rect key="frame" x="212" y="465.33333333333331" width="4" height="18.666666666666686"/>
+                                <accessibility key="accessibilityConfiguration" identifier="textInput"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                                 <connections>
@@ -66,6 +67,7 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="DRD-eo-fGM" userLabel="Text Output">
                                 <rect key="frame" x="28" y="501" width="372" height="261"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <accessibility key="accessibilityConfiguration" identifier="textOutput"/>
                                 <constraints>
                                     <constraint firstAttribute="height" priority="1" constant="261" placeholder="YES" id="fMB-Oh-EtG"/>
                                 </constraints>

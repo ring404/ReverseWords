@@ -10,12 +10,12 @@ class MainViewController: UIViewController {
     
     //MARK: - Properties
     
+    private let reverseStringManager = ReverseStringManager()
     private var currentState: State = .initial {
         didSet {
             updateUIAccordingToNewState()
         }
     }
-    private let reverseStringManager = ReverseStringManager()
     
     // MARK: - Outlets
     
@@ -36,14 +36,12 @@ class MainViewController: UIViewController {
         }
     }
     @IBOutlet private weak var navigationBar: UINavigationBar!
-    
     @IBOutlet private weak var textInput: UITextField! {
         didSet {
             textInput.delegate = self
             textInput.font = Font.regular
             textInput.textColor = Color.inputTextInactive
             textInput.attributedPlaceholder = Placeholder.attributed
-            
         }
     }
     @IBOutlet private weak var textOutput: UITextView! {
@@ -83,7 +81,7 @@ class MainViewController: UIViewController {
     
     private func updateUIAccordingToNewState() {
         
-        func setUpIniTialState() {
+        func setUpInitialState() {
             textInput.text?.removeAll()
             textOutput.text.removeAll()
             dividerView.backgroundColor = Color.dividerNonActive
@@ -109,7 +107,7 @@ class MainViewController: UIViewController {
         
         switch currentState {
         case .initial:
-           setUpIniTialState()
+           setUpInitialState()
             
         case .input:
            setUpInputState()
@@ -120,7 +118,6 @@ class MainViewController: UIViewController {
     }
     
     private func setUpCurrentState(trigger: Trigger) {
-        
         switch currentState {
         case .initial:
             if !(textInput.text?.isEmpty ?? false) {
@@ -141,7 +138,7 @@ class MainViewController: UIViewController {
                 }
             }
             
-        case .result(reversedtext: let reversedtext):
+        case .result(let reversedtext):
             textOutput.text = reversedtext
             switch trigger {
             case .buttonPressed:
@@ -215,6 +212,7 @@ private extension MainViewController {
         static let regular:UIFont = UIFont.main(size: 17)
         static let output:UIFont = UIFont.main(size: 24)
     }
+    
     enum Color {
         static let dividerNonActive = UIColor(red: 0.129, green: 0.129, blue: 0.129, alpha: 0.2)
         static let dividerActive = UIColor(red: 0, green: 0.478, blue: 1, alpha: 1)
@@ -225,10 +223,12 @@ private extension MainViewController {
         static let reverseButtonInactive = UIColor(red: 0, green: 0.478, blue: 1, alpha: 0.6)
         static let reserseButtonActive = UIColor(red: 0, green: 0.478, blue: 1, alpha: 1)
     }
+    
     enum ButtonTitle {
         static let clear = "Clear"
         static let reverse = "Reverse"
     }
+    
     enum Placeholder {
         static let textColor = Color.inputTextInactive
         static let font = Font.regular
@@ -246,12 +246,12 @@ private extension MainViewController {
 // MARK: - Models
 
 private extension MainViewController {
-    
     enum State {
         case initial
         case input
         case result(reversedtext: String)
     }
+    
     enum Trigger {
         case buttonPressed
         case textChanged
@@ -265,6 +265,7 @@ extension MainViewController: UINavigationBarDelegate {
         navigationBar.delegate = self
         UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.font : Font.regular]
     }
+    
     func position(for bar: UIBarPositioning) -> UIBarPosition {
         return .topAttached
     }
