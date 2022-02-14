@@ -52,5 +52,179 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AC2D69C6-115F-47A6-ABF1-786A0BC8FA60"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ReverseWordsTests/ReverseWordsUnitTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "testStringNotNil()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0F291A73-1726-472A-955B-35222B631C3B"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ReverseWordsUITests/ReverseWordsUITests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "outputIsCorrect()"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  uuid = "0F291A73-1726-472A-955B-35222B631C3B - b394439216efdb4b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "outputIsCorrect() -&gt; ()"
+                  moduleName = "ReverseWordsUITests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/qqrr/Documents/SwiftStudy2/Current%20apps/FoxMinded/ReverseWords_codedUI/ReverseWordsUITests/ReverseWordsUITests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "102">
+               </Location>
+               <Location
+                  uuid = "0F291A73-1726-472A-955B-35222B631C3B - b394439216efdbc7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "outputIsCorrect() -&gt; ()"
+                  moduleName = "ReverseWordsUITests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/qqrr/Documents/SwiftStudy2/Current%20apps/FoxMinded/ReverseWords_codedUI/ReverseWordsUITests/ReverseWordsUITests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  uuid = "0F291A73-1726-472A-955B-35222B631C3B - b394439216efd919"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "outputIsCorrect() -&gt; ()"
+                  moduleName = "ReverseWordsUITests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/qqrr/Documents/SwiftStudy2/Current%20apps/FoxMinded/ReverseWords_codedUI/ReverseWordsUITests/ReverseWordsUITests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "46"
+                  endingLineNumber = "46"
+                  offsetFromSymbolStart = "102">
+               </Location>
+               <Location
+                  uuid = "0F291A73-1726-472A-955B-35222B631C3B - b394439216efd919"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "outputIsCorrect() -&gt; ()"
+                  moduleName = "ReverseWordsUITests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/qqrr/Documents/SwiftStudy2/Current%20apps/FoxMinded/ReverseWords_codedUI/ReverseWordsUITests/ReverseWordsUITests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "46"
+                  endingLineNumber = "46"
+                  offsetFromSymbolStart = "268">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AB5878FE-10F5-4DF7-B7E5-CC95D7B49F07"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ReverseWordsUITests/ReverseWordsUITests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "testUI()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "AB5878FE-10F5-4DF7-B7E5-CC95D7B49F07 - 8ce20efb4caa4af1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ReverseWordsUITests.ReverseWordsUITests.testFirstScreen() -&gt; ()"
+                  moduleName = "ReverseWordsUITests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/qqrr/Documents/SwiftStudy2/Current%20apps/FoxMinded/ReverseWords_codedUI/ReverseWordsUITests/ReverseWordsUITests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "68">
+               </Location>
+               <Location
+                  uuid = "AB5878FE-10F5-4DF7-B7E5-CC95D7B49F07 - 8ce20efb4caa4af1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ReverseWordsUITests.ReverseWordsUITests.testFirstScreen() -&gt; ()"
+                  moduleName = "ReverseWordsUITests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/qqrr/Documents/SwiftStudy2/Current%20apps/FoxMinded/ReverseWords_codedUI/ReverseWordsUITests/ReverseWordsUITests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "52">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1B1FF54B-DED0-4621-9C9F-E18BC33C5E12"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ReverseWordsUITests/ReverseWordsUITests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "outputIsCorrect()"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CB2690A9-9C25-4DA0-89B7-BDF45794E0DD"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ReverseWordsUITests/ReverseWordsUITests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "testUI()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

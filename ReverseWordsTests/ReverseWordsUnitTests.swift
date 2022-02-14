@@ -10,11 +10,21 @@ import XCTest
 
 class ReverseWordsUnitTests: XCTestCase {
     
-    func testStringReversing() {
-        let reverseManager = ReverseStringManager()
-        let testString = "Test string"
+    // MARK: - Properties
+    
+   private let reverseManager = ReverseStringManager()
+   private let testString = "Test string"
+    
+    
+    // MARK: - Methods
+    
+    private func testStringReversing() {
         let result = reverseManager.reverseString(text: testString)
         XCTAssertTrue(result == "tseT gnirts")
+    }
+    
+    private func testStringNotNil() {
+        let result = reverseManager.reverseString(text: testString)
         XCTAssertNotNil(result == "tseT gnirts")
     }
 }

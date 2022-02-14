@@ -9,6 +9,29 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>ReverseWordsUITests.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>DE651BB927B9265C00A47114</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DE651BCA27B93D4D00A47114</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DEE9063F273B0E91006D252E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 	</dict>
 </dict>
 </plist>

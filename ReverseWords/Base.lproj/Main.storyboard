@@ -55,6 +55,7 @@
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oa7-Bi-4np">
                                 <rect key="frame" x="176.33333333333334" y="770" width="75.333333333333343" height="31"/>
+                                <accessibility key="accessibilityConfiguration" identifier="reverseButton"/>
                                 <constraints>
                                     <constraint firstAttribute="height" priority="1" constant="56" placeholder="YES" id="g6L-j2-tAr"/>
                                 </constraints>
