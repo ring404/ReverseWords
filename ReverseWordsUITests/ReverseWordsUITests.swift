@@ -9,28 +9,32 @@ import XCTest
 import ReverseWords
 
 class ReverseWordsUITests: XCTestCase {
-
-    func testUI() {
+    private func testUI() {
         let app = XCUIApplication()
         app.launch()
-        
-        let textInput = app.textFields["textInput"]
-        let textOutput = app.textViews["textOutput"]
-        let reverseButton = app.buttons["reverseButton"]
-        let testString = "Test string"
- 
-        func reverseButtonIsEnabled() {
-        textInput.tap()
-        textInput.typeText(testString)
-        XCTAssertTrue(reverseButton.isEnabled)
-        }
-
-        func outputIsCorrect() {
-            app/*@START_MENU_TOKEN@*/.buttons["Done"]/*[[".keyboards",".buttons[\"fine\"]",".buttons[\"Done\"]"],[[[-1,2],[-1,1],[-1,0,1]],[[-1,2],[-1,1]]],[0]]@END_MENU_TOKEN@*/.twoFingerTap()
-            XCTAssertTrue(textOutput.value as? String == "tseT gnirts")
-        }
-      
         reverseButtonIsEnabled()
         outputIsCorrect()
+    }
+    private func reverseButtonIsEnabled() {
+        //        Given
+        let app = XCUIApplication()
+        let textInput = app.textFields["textInput"]
+        let reverseButton = app.buttons["reverseButton"]
+        let testString = "Test string"
+        //        When
+        textInput.tap()
+        textInput.typeText(testString)
+        //        Then
+        XCTAssertTrue(reverseButton.isEnabled)
+    }
+    
+    private func outputIsCorrect() {
+        //        Given
+        let app = XCUIApplication()
+        let textOutput = app.textViews["textOutput"]
+        //        When
+        app/*@START_MENU_TOKEN@*/.buttons["Done"]/*[[".keyboards",".buttons[\"fine\"]",".buttons[\"Done\"]"],[[[-1,2],[-1,1],[-1,0,1]],[[-1,2],[-1,1]]],[0]]@END_MENU_TOKEN@*/.twoFingerTap()
+        //        Then
+        XCTAssertTrue(textOutput.value as? String == "tseT gnirts")
     }
 }
