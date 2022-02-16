@@ -12,11 +12,11 @@ class ReverseWordsUITests: XCTestCase {
     func testreverseButtonIsEnabled() {
         //        Given
         let app = XCUIApplication()
-        app.launch()
         let textInput = app.textFields["textInput"]
         let reverseButton = app.buttons["reverseButton"]
         let testString = "Test string"
         //        When
+        app.launch()
         textInput.tap()
         textInput.typeText(testString)
         //        Then
@@ -27,12 +27,12 @@ class ReverseWordsUITests: XCTestCase {
     func testOutputIsCorrect() {
         //        Given
         let app = XCUIApplication()
-        app.launch()
         let textOutput = app.textViews["textOutput"]
         let textInput = app.textFields["textInput"]
         let reverseButton = app.buttons["reverseButton"]
         let testString = "Test string"
         //        When
+        app.launch()
         textInput.tap()
         textInput.typeText(testString)
         textOutput.tap()
@@ -45,11 +45,11 @@ class ReverseWordsUITests: XCTestCase {
     func testButtonIsDisabledAfterAddingAndDeletingText() {
         //        Given
         let app = XCUIApplication()
-        app.launch()
         let textInput = app.textFields["textInput"]
         let testString = "Test"
         let reverseButton = app.buttons["reverseButton"]
         //        When
+        app.launch()
         textInput.tap()
         textInput.typeText(testString)
         textInput.tap()
@@ -64,12 +64,12 @@ class ReverseWordsUITests: XCTestCase {
     func testInputIsEmptyAfterTextAddingAndReversing() {
         //        Given
         let app = XCUIApplication()
-        app.launch()
         let textInput = app.textFields["textInput"]
         let testString = "Test string"
         let reverseButton = app.buttons["reverseButton"]
         let textOutput = app.textViews["textOutput"]
         //        When
+        app.launch()
         textInput.tap()
         textInput.typeText(testString)
         textOutput.tap()
@@ -83,12 +83,12 @@ class ReverseWordsUITests: XCTestCase {
     func testOutputIsEmptyAfterTextAddingAndReversing() {
         //        Given
         let app = XCUIApplication()
-        app.launch()
         let textInput = app.textFields["textInput"]
         let testString = "Test string"
         let reverseButton = app.buttons["reverseButton"]
         let textOutput = app.textViews["textOutput"]
         //        When
+        app.launch()
         textInput.tap()
         textInput.typeText(testString)
         textOutput.tap()
@@ -102,12 +102,12 @@ class ReverseWordsUITests: XCTestCase {
     func testButtonIsDisabledAfterTextAddingAndReversing() {
         //        Given
         let app = XCUIApplication()
-        app.launch()
         let textInput = app.textFields["textInput"]
         let testString = "Test string"
         let reverseButton = app.buttons["reverseButton"]
         let textOutput = app.textViews["textOutput"]
         //        When
+        app.launch()
         textInput.tap()
         textInput.typeText(testString)
         textOutput.tap()
@@ -121,11 +121,11 @@ class ReverseWordsUITests: XCTestCase {
     func testButtonLabelIsReverseAfterAddingAndDeletingText() {
         //        Given
         let app = XCUIApplication()
-        app.launch()
         let textInput = app.textFields["textInput"]
         let testString = "Test"
         let reverseButton = app.buttons["reverseButton"]
         //        When
+        app.launch()
         textInput.tap()
         textInput.typeText(testString)
         textInput.tap()
@@ -140,11 +140,11 @@ class ReverseWordsUITests: XCTestCase {
     func testButtonLabelIsReverseAfterAddingText() {
         //        Given
         let app = XCUIApplication()
-        app.launch()
         let textInput = app.textFields["textInput"]
         let testString = "Test"
         let reverseButton = app.buttons["reverseButton"]
         //        When
+        app.launch()
         textInput.tap()
         textInput.typeText(testString)
         textInput.tap()
@@ -156,12 +156,12 @@ class ReverseWordsUITests: XCTestCase {
     func testButtonLabelIsClearAfterTextAddingAndReversing() {
         //        Given
         let app = XCUIApplication()
-        app.launch()
         let textInput = app.textFields["textInput"]
         let testString = "Test string"
         let reverseButton = app.buttons["reverseButton"]
         let textOutput = app.textViews["textOutput"]
         //        When
+        app.launch()
         textInput.tap()
         textInput.typeText(testString)
         textOutput.tap()
@@ -174,12 +174,12 @@ class ReverseWordsUITests: XCTestCase {
     func testButtonIsEnabledAfterTextAddingAndReversing() {
         //        Given
         let app = XCUIApplication()
-        app.launch()
         let textInput = app.textFields["textInput"]
         let testString = "Test string"
         let reverseButton = app.buttons["reverseButton"]
         let textOutput = app.textViews["textOutput"]
         //        When
+        app.launch()
         textInput.tap()
         textInput.typeText(testString)
         textOutput.tap()
@@ -192,12 +192,12 @@ class ReverseWordsUITests: XCTestCase {
     func testButtonLabelIsReverseAfterTextAddingThenReversingThenAddingMoreText() {
         //        Given
         let app = XCUIApplication()
-        app.launch()
         let textInput = app.textFields["textInput"]
         let testString = "Test"
         let reverseButton = app.buttons["reverseButton"]
         let textOutput = app.textViews["textOutput"]
         //        When
+        app.launch()
         textInput.tap()
         textInput.typeText(testString)
         textOutput.tap()
@@ -212,12 +212,12 @@ class ReverseWordsUITests: XCTestCase {
     func testButtonLabelIsClearAfterTextAddingThenReversingThenAddingMoreTextAndTapOnButton() {
         //        Given
         let app = XCUIApplication()
-        app.launch()
         let textInput = app.textFields["textInput"]
         let testString = "Test"
         let reverseButton = app.buttons["reverseButton"]
         let textOutput = app.textViews["textOutput"]
         //        When
+        app.launch()
         textInput.tap()
         textInput.typeText(testString)
         textOutput.tap()
@@ -234,12 +234,12 @@ class ReverseWordsUITests: XCTestCase {
     func testTextoutputHasResultAfterTextAddingThenReversingThenAddingMoreTextAndTapOnButton() {
         //        Given
         let app = XCUIApplication()
-        app.launch()
         let textInput = app.textFields["textInput"]
         let testString = "Test string"
         let reverseButton = app.buttons["reverseButton"]
         let textOutput = app.textViews["textOutput"]
         //        When
+        app.launch()
         textInput.tap()
         textInput.typeText(testString)
         textOutput.tap()
