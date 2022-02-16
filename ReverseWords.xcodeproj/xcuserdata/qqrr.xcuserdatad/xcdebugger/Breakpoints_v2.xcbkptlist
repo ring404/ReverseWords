@@ -71,7 +71,118 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "AB5878FE-10F5-4DF7-B7E5-CC95D7B49F07"
+            uuid = "F0939E30-B01F-4FC2-90D2-2BCBED11C796"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ReverseWordsUITestsssssss/ReverseWordsUITestsssssss.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "testExample()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "33BDED3C-1F66-4929-87E2-B16A7819C2A5"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ReverseWordsUITests/ReverseWordsUITests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "testOutputIsCorrect()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3648DBD5-5FEF-4108-8E29-0114C11D855E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ReverseWordsUITests/ReverseWordsUITests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "testreverseButtonIsEnabled()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "3648DBD5-5FEF-4108-8E29-0114C11D855E - 31b4c1370e660666"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "function signature specialization &lt;Arg[0] = Dead&gt; of ReverseWordsUITests.ReverseWordsUITests.reverseButtonIsEnabled() -&gt; ()"
+                  moduleName = "ReverseWordsUITests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/qqrr/Documents/SwiftStudy2/Current%20apps/FoxMinded/ReverseWords_codedUI/ReverseWordsUITests/ReverseWordsUITests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "319">
+               </Location>
+               <Location
+                  uuid = "3648DBD5-5FEF-4108-8E29-0114C11D855E - 7ce867e48f259ad9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "function signature specialization &lt;Arg[0] = Dead&gt; of ReverseWordsUITests.ReverseWordsUITests.testreverseButtonIsEnabled() -&gt; ()"
+                  moduleName = "ReverseWordsUITests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/qqrr/Documents/SwiftStudy2/Current%20apps/FoxMinded/ReverseWords_codedUI/ReverseWordsUITests/ReverseWordsUITests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "335">
+               </Location>
+               <Location
+                  uuid = "3648DBD5-5FEF-4108-8E29-0114C11D855E - 7ce867e48f2595c2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "function signature specialization &lt;Arg[0] = Dead&gt; of ReverseWordsUITests.ReverseWordsUITests.testreverseButtonIsEnabled() -&gt; ()"
+                  moduleName = "ReverseWordsUITests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/qqrr/Documents/SwiftStudy2/Current%20apps/FoxMinded/ReverseWords_codedUI/ReverseWordsUITests/ReverseWordsUITests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "335">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C7FA728A-3416-43E2-A0EB-FFF56316F11D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ReverseWordsUITests/ReverseWordsUITests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "testOutputIsCorrect()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FA58D9B8-BE18-44E3-8681-F2FF7365FBE6"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
@@ -80,38 +191,70 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "12"
             endingLineNumber = "12"
-            landmarkName = "testUI()"
+            landmarkName = "testreverseButtonIsEnabled()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2A4A8865-F77E-4290-A977-78F6E5B1080D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ReverseWordsUITests/ReverseWordsUITests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "testOutputIsCorrect()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "60F36E47-C7AA-44FB-88A9-78169DE32716"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ReverseWordsUITests/ReverseWordsUITests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
+            landmarkName = "testButtonIsDisabledAfterAddingAndDeletingText()"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "AB5878FE-10F5-4DF7-B7E5-CC95D7B49F07 - 8ce20efb4caa4af1"
+                  uuid = "60F36E47-C7AA-44FB-88A9-78169DE32716 - 5a41baaff44267d4"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "ReverseWordsUITests.ReverseWordsUITests.testFirstScreen() -&gt; ()"
+                  symbolName = "function signature specialization &lt;Arg[0] = Dead&gt; of ReverseWordsUITests.ReverseWordsUITests.testButtonIsDisabledAfterAddingAndDeletingText() -&gt; ()"
                   moduleName = "ReverseWordsUITests"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/qqrr/Documents/SwiftStudy2/Current%20apps/FoxMinded/ReverseWords_codedUI/ReverseWordsUITests/ReverseWordsUITests.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "15"
-                  endingLineNumber = "15"
-                  offsetFromSymbolStart = "68">
+                  startingLineNumber = "59"
+                  endingLineNumber = "59"
+                  offsetFromSymbolStart = "524">
                </Location>
                <Location
-                  uuid = "AB5878FE-10F5-4DF7-B7E5-CC95D7B49F07 - 8ce20efb4caa4af1"
+                  uuid = "60F36E47-C7AA-44FB-88A9-78169DE32716 - 5a41baaff44267d4"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "ReverseWordsUITests.ReverseWordsUITests.testFirstScreen() -&gt; ()"
+                  symbolName = "function signature specialization &lt;Arg[0] = Dead&gt; of ReverseWordsUITests.ReverseWordsUITests.testButtonIsDisabledAfterAddingAndDeletingText() -&gt; ()"
                   moduleName = "ReverseWordsUITests"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/qqrr/Documents/SwiftStudy2/Current%20apps/FoxMinded/ReverseWords_codedUI/ReverseWordsUITests/ReverseWordsUITests.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "15"
-                  endingLineNumber = "15"
-                  offsetFromSymbolStart = "52">
+                  startingLineNumber = "59"
+                  endingLineNumber = "59"
+                  offsetFromSymbolStart = "493">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -119,16 +262,320 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "89B6F9E8-7C98-412C-AAC4-E6E5E8C1C4EA"
+            uuid = "8A9BE784-F384-4816-89CD-8BC681B014E7"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ReverseWordsUITests/ReverseWordsUITests.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "15"
-            endingLineNumber = "15"
-            landmarkName = "testUI()"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "testOutputIsCorrect()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "8A9BE784-F384-4816-89CD-8BC681B014E7 - 3e599f11c1be2288"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "function signature specialization &lt;Arg[0] = Dead&gt; of ReverseWordsUITests.ReverseWordsUITests.testOutputIsCorrect() -&gt; ()"
+                  moduleName = "ReverseWordsUITests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/qqrr/Documents/SwiftStudy2/Current%20apps/FoxMinded/ReverseWords_codedUI/ReverseWordsUITests/ReverseWordsUITests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "46"
+                  endingLineNumber = "46"
+                  offsetFromSymbolStart = "445">
+               </Location>
+               <Location
+                  uuid = "8A9BE784-F384-4816-89CD-8BC681B014E7 - 3e599f11c1be21b3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "function signature specialization &lt;Arg[0] = Dead&gt; of ReverseWordsUITests.ReverseWordsUITests.testOutputIsCorrect() -&gt; ()"
+                  moduleName = "ReverseWordsUITests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/qqrr/Documents/SwiftStudy2/Current%20apps/FoxMinded/ReverseWords_codedUI/ReverseWordsUITests/ReverseWordsUITests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "445">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3C954167-A9E7-48D4-875E-5E408B602B2D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ReverseWordsUITests/ReverseWordsUITests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "79"
+            endingLineNumber = "79"
+            landmarkName = "testInputIsEmptyAfterTextAddingAndReversing()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "3C954167-A9E7-48D4-875E-5E408B602B2D - 7fb1281644bc0359"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "function signature specialization &lt;Arg[0] = Dead&gt; of ReverseWordsUITests.ReverseWordsUITests.testInputIsEmptyAfterTextAddingAndReversing() -&gt; ()"
+                  moduleName = "ReverseWordsUITests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/qqrr/Documents/SwiftStudy2/Current%20apps/FoxMinded/ReverseWords_codedUI/ReverseWordsUITests/ReverseWordsUITests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "86"
+                  endingLineNumber = "86"
+                  offsetFromSymbolStart = "479">
+               </Location>
+               <Location
+                  uuid = "3C954167-A9E7-48D4-875E-5E408B602B2D - 7fb1281644bc0232"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "function signature specialization &lt;Arg[0] = Dead&gt; of ReverseWordsUITests.ReverseWordsUITests.testInputIsEmptyAfterTextAddingAndReversing() -&gt; ()"
+                  moduleName = "ReverseWordsUITests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/qqrr/Documents/SwiftStudy2/Current%20apps/FoxMinded/ReverseWords_codedUI/ReverseWordsUITests/ReverseWordsUITests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "79"
+                  endingLineNumber = "79"
+                  offsetFromSymbolStart = "479">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C44AB031-1B1E-4A0A-98C5-027F9FE3FFD3"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ReverseWordsUITests/ReverseWordsUITests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "76"
+            endingLineNumber = "76"
+            landmarkName = "testInputIsEmptyAfterTextAddingAndReversing()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "C44AB031-1B1E-4A0A-98C5-027F9FE3FFD3 - 7fb1281644bc02be"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "function signature specialization &lt;Arg[0] = Dead&gt; of ReverseWordsUITests.ReverseWordsUITests.testInputIsEmptyAfterTextAddingAndReversing() -&gt; ()"
+                  moduleName = "ReverseWordsUITests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/qqrr/Documents/SwiftStudy2/Current%20apps/FoxMinded/ReverseWords_codedUI/ReverseWordsUITests/ReverseWordsUITests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "83"
+                  endingLineNumber = "83"
+                  offsetFromSymbolStart = "440">
+               </Location>
+               <Location
+                  uuid = "C44AB031-1B1E-4A0A-98C5-027F9FE3FFD3 - 7fb1281644bc02be"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "function signature specialization &lt;Arg[0] = Dead&gt; of ReverseWordsUITests.ReverseWordsUITests.testInputIsEmptyAfterTextAddingAndReversing() -&gt; ()"
+                  moduleName = "ReverseWordsUITests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/qqrr/Documents/SwiftStudy2/Current%20apps/FoxMinded/ReverseWords_codedUI/ReverseWordsUITests/ReverseWordsUITests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "83"
+                  endingLineNumber = "83"
+                  offsetFromSymbolStart = "445">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6E24C651-D189-4D29-AD1C-19996C758F5F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ReverseWordsUITests/ReverseWordsUITests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "98"
+            endingLineNumber = "98"
+            landmarkName = "testOutputIsEmptyAfterTextAddingAndReversing()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "83F0228B-34EB-496F-9B55-7EBB5E6D27C8"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ReverseWordsUITests/ReverseWordsUITests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "83"
+            endingLineNumber = "83"
+            landmarkName = "testOutputIsEmptyAfterTextAddingAndReversing()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8CC3F191-3127-4E58-8906-6875C1C2D5C2"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ReverseWordsUITests/ReverseWordsUITests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "96"
+            endingLineNumber = "96"
+            landmarkName = "testOutputIsEmptyAfterTextAddingAndReversing()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B7CA0694-1667-4F78-BE0D-59673189A71B"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ReverseWordsUITests/ReverseWordsUITests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "70"
+            endingLineNumber = "70"
+            landmarkName = "testInputIsEmptyAfterTextAddingAndReversing()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "B7CA0694-1667-4F78-BE0D-59673189A71B - 7fb1281644bc0270"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "function signature specialization &lt;Arg[0] = Dead&gt; of ReverseWordsUITests.ReverseWordsUITests.testInputIsEmptyAfterTextAddingAndReversing() -&gt; ()"
+                  moduleName = "ReverseWordsUITests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/qqrr/Documents/SwiftStudy2/Current%20apps/FoxMinded/ReverseWords_codedUI/ReverseWordsUITests/ReverseWordsUITests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "77"
+                  endingLineNumber = "77"
+                  offsetFromSymbolStart = "165">
+               </Location>
+               <Location
+                  uuid = "B7CA0694-1667-4F78-BE0D-59673189A71B - 7fb1281644bc0149"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "function signature specialization &lt;Arg[0] = Dead&gt; of ReverseWordsUITests.ReverseWordsUITests.testInputIsEmptyAfterTextAddingAndReversing() -&gt; ()"
+                  moduleName = "ReverseWordsUITests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/qqrr/Documents/SwiftStudy2/Current%20apps/FoxMinded/ReverseWords_codedUI/ReverseWordsUITests/ReverseWordsUITests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "70"
+                  endingLineNumber = "70"
+                  offsetFromSymbolStart = "165">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DD8D1BDC-6997-4CA5-8527-60B7CC11DAA9"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ReverseWordsUITests/ReverseWordsUITests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "136"
+            endingLineNumber = "136"
+            landmarkName = "testButtonLabelIsReverseAfterAddingAndDeletingText()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C46381C6-F997-440F-99E1-635B427FC601"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ReverseWordsUITests/ReverseWordsUITests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "134"
+            endingLineNumber = "134"
+            landmarkName = "testButtonLabelIsReverseAfterAddingAndDeletingText()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "83440EA0-D917-48ED-9AF4-653954E71FED"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ReverseWordsUITests/ReverseWordsUITests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "252"
+            endingLineNumber = "252"
+            landmarkName = "testTextoutputHasResultAfterTextAddingThenReversingThenAddingMoreTextAndTapOnButton()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A7346282-07A3-4A70-A280-E9A31D3156C1"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ReverseWords/MainViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "131"
+            endingLineNumber = "131"
+            landmarkName = "setUpCurrentState(trigger:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "719D7F6B-FF9F-49AF-A55E-E106DCB4708B"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ReverseWords/MainViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "132"
+            endingLineNumber = "132"
+            landmarkName = "setUpCurrentState(trigger:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
