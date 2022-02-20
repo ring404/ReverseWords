@@ -71,10 +71,10 @@ class AnagramsViewController: UIViewController {
             make.right.equalTo(view).offset(-20)
         }
         outputText.snp.makeConstraints { (make) -> Void in
-            make.top.equalTo(resultButton.snp.bottom).offset(40)
+            make.top.equalTo(resultButton.snp.bottom).offset(20)
             make.left.equalTo(view).offset(20)
-            make.height.equalTo(400)
             make.right.equalTo(view).offset(-20)
+            make.bottom.equalTo(view.safeAreaInsets.bottom)
         }
     }
     
@@ -85,6 +85,7 @@ class AnagramsViewController: UIViewController {
         resultButton.setTitle("Result", for: .normal)
         resultButton.setTitleColor(.systemBlue, for: .normal)
         resultButton.addTarget(self, action: #selector(reverseButtonAction(_:)), for: UIControl.Event.touchUpInside)
+        outputText.font = UIFont.systemFont(ofSize: 15)
     }
     
     func addSubviews() {
@@ -130,11 +131,13 @@ class AnagramsViewController: UIViewController {
         func switchToDefaultSegment() {
             defaulExplanationLabel.isHidden = false
             inputExclusionField.isHidden = true
+            outputText.text.removeAll()
         }
         
         func switchToCustomSegment() {
             defaulExplanationLabel.isHidden = true
             inputExclusionField.isHidden = false
+            outputText.text.removeAll()
         }
         switch currentState {
         case .def:
