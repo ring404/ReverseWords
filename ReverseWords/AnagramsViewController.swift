@@ -109,10 +109,10 @@ class AnagramsViewController: UIViewController {
     
    @objc func reverseButtonAction(_ sender:UIButton!) {
        if currentState == .def {
-           outputText.text = reverseStringManager.reverseString(text: inputText.text ?? "")
+           outputText.text = reverseStringManager.reverseStringDefaultState(text: inputText.text ?? "")
        }
        if currentState == .custom {
-           outputText.text = reverseStringManager.reverseStringWithExclusion(text: inputText.text ?? "", exclusion: inputExclusionField.text ?? "")
+//           outputText.text = reverseStringManager.reverseStringWithExclusion(text: inputText.text ?? "", exclusion: inputExclusionField.text ?? "")
        }
       }
     
