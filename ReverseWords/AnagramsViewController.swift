@@ -86,6 +86,7 @@ class AnagramsViewController: UIViewController {
         resultButton.setTitleColor(.systemBlue, for: .normal)
         resultButton.addTarget(self, action: #selector(reverseButtonAction(_:)), for: UIControl.Event.touchUpInside)
         outputText.font = UIFont.systemFont(ofSize: 15)
+        outputText.isEditable = false
     }
     
     func addSubviews() {
@@ -107,16 +108,16 @@ class AnagramsViewController: UIViewController {
         return control
     }
     
-   @objc func reverseButtonAction(_ sender:UIButton!) {
-       if currentState == .def {
-           outputText.text = reverseStringManager.reverseStringDefaultState(text: inputText.text ?? "")
-       }
-       if currentState == .custom {
-//           outputText.text = reverseStringManager.reverseStringWithExclusion(text: inputText.text ?? "", exclusion: inputExclusionField.text ?? "")
-       }
-      }
+    @objc func reverseButtonAction(_ sender:UIButton!) {
+        if currentState == .def {
+            outputText.text = reverseStringManager.reverseStringDefaultState(text: inputText.text ?? "")
+        }
+        if currentState == .custom {
+            outputText.text = reverseStringManager.reverseStringWithExclusion(text: inputText.text ?? "", exclusion: inputExclusionField.text ?? "")
+        }
+    }
     
-   @objc func handleSegmentedControlValueChanged(_ sender : UISegmentedControl) {
+    @objc func handleSegmentedControlValueChanged(_ sender : UISegmentedControl) {
         switch (segmentedSwitcher.selectedSegmentIndex) {
         case 0:
             currentState = .def
@@ -151,8 +152,8 @@ class AnagramsViewController: UIViewController {
 
 extension AnagramsViewController {
     enum Segments:String {
-    case def = "Default"
-    case custom = "Custom"
+        case def = "Default"
+        case custom = "Custom"
     }
 }
 
