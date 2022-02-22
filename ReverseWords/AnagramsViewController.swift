@@ -87,7 +87,18 @@ class AnagramsViewController: UIViewController {
         resultButton.addTarget(self, action: #selector(reverseButtonAction(_:)), for: UIControl.Event.touchUpInside)
         outputText.font = UIFont.systemFont(ofSize: 15)
         outputText.isEditable = false
+        inputText.addTarget(self, action: #selector(inputTextEditingDidEnd), for: .editingChanged)
+        inputExclusionField.addTarget(self, action: #selector(inputTextEditingDidEnd), for: .editingChanged)
     }
+    
+    @objc func inputTextEditingDidEnd(textField: UITextField) {
+        if currentState == .def {
+            outputText.text = reverseStringManager.reverseStringDefaultState(text: inputText.text ?? "")
+        }
+        if currentState == .custom {
+            outputText.text = reverseStringManager.reverseStringWithExclusion(text: inputText.text ?? "", exclusion: inputExclusionField.text ?? "")
+        }
+      }
     
     func addSubviews() {
         view.addSubview(inputText)
@@ -139,6 +150,7 @@ class AnagramsViewController: UIViewController {
             defaulExplanationLabel.isHidden = true
             inputExclusionField.isHidden = false
             outputText.text.removeAll()
+            inputTextEditingDidEnd(textField: inputExclusionField)
         }
         switch currentState {
         case .def:
