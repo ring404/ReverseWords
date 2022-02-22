@@ -35,6 +35,7 @@ class AnagramsViewController: UIViewController {
         addSubviews()
         setupLayout()
         configureUI()
+        setCccessibilityIdentifiers()
     }
     
     // MARK: - Methods
@@ -89,6 +90,13 @@ class AnagramsViewController: UIViewController {
         outputText.isEditable = false
         inputText.addTarget(self, action: #selector(inputTextEditingDidEnd), for: .editingChanged)
         inputExclusionField.addTarget(self, action: #selector(inputTextEditingDidEnd), for: .editingChanged)
+    }
+    
+    func setCccessibilityIdentifiers() {
+        inputText.accessibilityIdentifier = "inputText"
+        inputExclusionField.accessibilityIdentifier = "inputExclusionField"
+        resultButton.accessibilityIdentifier = "resultButton"
+        outputText.accessibilityIdentifier = "outputText"
     }
     
     @objc func inputTextEditingDidEnd(textField: UITextField) {

@@ -41,7 +41,6 @@ class ReverseStringManager {
         var alphabeticCharactersSet:CharacterSet = .alphanumerics
         alphabeticCharactersSet.formUnion(.punctuationCharacters)
         alphabeticCharactersSet.remove(charactersIn: exclusion)
-        print(alphabeticCharactersSet.description)
         let characterArray = Array(text)
         var alphabeticCharArray = [Character]()
         for char in characterArray {
