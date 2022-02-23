@@ -18,15 +18,15 @@ class AnagramsViewController: UIViewController {
             updateUIAccordingToNewState()
         }
     }
-    var inputText = UITextField.main(placeholder: "Enter text to reverse here")
-    var segmentItems:[String] = [Segments.def.rawValue, Segments.custom.rawValue]
-    lazy var segmentedSwitcher: UISegmentedControl = {
+    private  var inputText = UITextField.main(placeholder: "Enter text to reverse here")
+    private var segmentItems:[String] = [Segments.def.rawValue, Segments.custom.rawValue]
+    private lazy var segmentedSwitcher: UISegmentedControl = {
         return setUpSegmentedControl()
     } ()
-    var defaulExplanationLabel = UILabel()
-    var inputExclusionField = UITextField.main(placeholder: "Text to ignore")
-    var resultButton = UIButton()
-    var outputText = UITextView()
+    private var defaulExplanationLabel = UILabel()
+    private var inputExclusionField = UITextField.main(placeholder: "Text to ignore")
+    private var resultButton = UIButton()
+    private var outputText = UITextView()
     
     // MARK: - Inretface rotate adjustments
     
@@ -46,12 +46,12 @@ class AnagramsViewController: UIViewController {
         setupLayout()
         configureUI()
         setupTargets()
-        setCccessibilityIdentifiers()
+        setAccessibilityIdentifiers()
     }
     
     // MARK: - Methods
     
-    func setupLayout() {
+    private func setupLayout() {
         inputText.snp.makeConstraints { (make) -> Void in
             make.top.equalTo(view.safeAreaLayoutGuide.snp.top).offset(40)
             make.left.equalTo(view).offset(20)
@@ -90,7 +90,7 @@ class AnagramsViewController: UIViewController {
         }
     }
     
-    func configureUI() {
+    private func configureUI() {
         currentState = .def
         view.backgroundColor = .white
         defaulExplanationLabel.text = "All characters except alphabetic symbols"
@@ -100,24 +100,17 @@ class AnagramsViewController: UIViewController {
         outputText.isEditable = false
     }
     
-    func setupTargets() {
-        resultButton.addTarget(self, action: #selector(reverseButtonAction(_:)), for: UIControl.Event.touchUpInside)
-        inputText.addTarget(self, action: #selector(inputTextEditingDidEnd), for: .editingChanged)
-        inputExclusionField.addTarget(self, action: #selector(inputTextEditingDidEnd), for: .editingChanged)
-    }
+    private func setUpSegmentedControl() -> UISegmentedControl {
+         let control = UISegmentedControl(items: segmentItems)
+         control.selectedSegmentIndex = 0
+         control.layer.cornerRadius = 9
+         control.layer.masksToBounds = true
+         control.tintColor = UIColor.white
+         control.addTarget(self, action: #selector(handleSegmentedControlValueChanged(_ :)), for: .valueChanged)
+         return control
+     }
     
-    func setCccessibilityIdentifiers() {
-        inputText.accessibilityIdentifier = "inputText"
-        inputExclusionField.accessibilityIdentifier = "inputExclusionField"
-        resultButton.accessibilityIdentifier = "resultButton"
-        outputText.accessibilityIdentifier = "outputText"
-    }
-    
-    @objc func inputTextEditingDidEnd(textField: UITextField) {
-        fillOutputDependsOnState()
-    }
-    
-    func addSubviews() {
+    private func addSubviews() {
         view.addSubview(inputText)
         view.addSubview(segmentedSwitcher)
         view.addSubview(defaulExplanationLabel)
@@ -126,43 +119,20 @@ class AnagramsViewController: UIViewController {
         view.addSubview(outputText)
     }
     
-    func setUpSegmentedControl() -> UISegmentedControl {
-        let control = UISegmentedControl(items: segmentItems)
-        control.selectedSegmentIndex = 0
-        control.layer.cornerRadius = 9
-        control.layer.masksToBounds = true
-        control.tintColor = UIColor.white
-        control.addTarget(self, action: #selector(handleSegmentedControlValueChanged(_ :)), for: .valueChanged)
-        return control
+    private func setupTargets() {
+        resultButton.addTarget(self, action: #selector(reverseButtonAction), for: .touchUpInside)
+        inputText.addTarget(self, action: #selector(inputTextEditingDidEnd), for: .editingChanged)
+        inputExclusionField.addTarget(self, action: #selector(inputTextEditingDidEnd), for: .editingChanged)
     }
     
-    @objc func reverseButtonAction(_ sender:UIButton!) {
-        self.view.endEditing(true)
-        fillOutputDependsOnState()
+    private func setAccessibilityIdentifiers() {
+        inputText.accessibilityIdentifier = "inputText"
+        inputExclusionField.accessibilityIdentifier = "inputExclusionField"
+        resultButton.accessibilityIdentifier = "resultButton"
+        outputText.accessibilityIdentifier = "outputText"
     }
     
-    func fillOutputDependsOnState()  {
-        if currentState == .def {
-            outputText.text = reverseStringManager.reverseStringDefaultState(text: inputText.text ?? "")
-        }
-        if currentState == .custom {
-            outputText.text = reverseStringManager.reverseStringWithExclusion(text: inputText.text ?? "", exclusion: inputExclusionField.text ?? "")
-        }
-    }
-    
-    @objc func handleSegmentedControlValueChanged(_ sender : UISegmentedControl) {
-        self.view.endEditing(true)
-        switch (segmentedSwitcher.selectedSegmentIndex) {
-        case 0:
-            currentState = .def
-        case 1:
-            currentState = .custom
-        default:
-            currentState = .def
-        }
-    }
-    
-    private func  updateUIAccordingToNewState() {
+    private func updateUIAccordingToNewState() {
         func switchToDefaultSegment() {
             defaulExplanationLabel.isHidden = false
             inputExclusionField.isHidden = true
@@ -179,6 +149,38 @@ class AnagramsViewController: UIViewController {
             switchToDefaultSegment()
         case .custom:
             switchToCustomSegment()
+        }
+    }
+    
+    private func fillOutputDependsOnState()  {
+        if currentState == .def {
+            outputText.text = reverseStringManager.reverseStringDefaultState(text: inputText.text ?? "")
+        }
+        if currentState == .custom {
+            outputText.text = reverseStringManager.reverseStringWithExclusion(text: inputText.text ?? "", exclusion: inputExclusionField.text ?? "")
+        }
+    }
+    
+    // MARK: - @objc methods for targets
+    
+    @objc private func inputTextEditingDidEnd(textField: UITextField) {
+        fillOutputDependsOnState()
+    }
+    
+    @objc private func reverseButtonAction() {
+        self.view.endEditing(true)
+        fillOutputDependsOnState()
+    }
+    
+    @objc private func handleSegmentedControlValueChanged(_ sender : UISegmentedControl) {
+        self.view.endEditing(true)
+        switch (segmentedSwitcher.selectedSegmentIndex) {
+        case 0:
+            currentState = .def
+        case 1:
+            currentState = .custom
+        default:
+            currentState = .def
         }
     }
 }
