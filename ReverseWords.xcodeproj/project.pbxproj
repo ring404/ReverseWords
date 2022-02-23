@@ -8,11 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		0C24B1910F4BE5F913C99F56 /* Pods_ReverseWordsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C2222EE8897DD27C517823B /* Pods_ReverseWordsTests.framework */; };
-		30396073336504BE4C2363AE /* Pods_ReverseWords_ReverseWordsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7F92708F050EA877CED07A8 /* Pods_ReverseWords_ReverseWordsUITests.framework */; };
+		30396073336504BE4C2363AE /* Pods_ReverseWords_ReverseWordsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7F92708F050EA877CED07A8 /* Pods_ReverseWords_ReverseWordsUITests.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		DE39FC812769F49C003CD1B7 /* ReverseStringManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE39FC802769F49C003CD1B7 /* ReverseStringManager.swift */; };
 		DE651BB527B9002700A47114 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE651BB427B9002700A47114 /* Extensions.swift */; };
 		DE651BBD27B9265C00A47114 /* ReverseWordsUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE651BBC27B9265C00A47114 /* ReverseWordsUnitTests.swift */; };
 		DE651BCE27B93D4D00A47114 /* ReverseWordsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE651BCD27B93D4D00A47114 /* ReverseWordsUITests.swift */; };
+		DE6DA7FE27C621A40098770F /* Pods_ReverseWords_ReverseWordsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7F92708F050EA877CED07A8 /* Pods_ReverseWords_ReverseWordsUITests.framework */; };
+		DE6DA7FF27C621AD0098770F /* Pods_ReverseWordsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C2222EE8897DD27C517823B /* Pods_ReverseWordsTests.framework */; };
 		DE73A70B27C1206000801126 /* AnagramsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE73A70A27C1206000801126 /* AnagramsViewController.swift */; };
 		DE9B95F027BF9DE0001EC668 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9B95EC27BF9DE0001EC668 /* Extensions.swift */; };
 		DE9B95F127BF9DE0001EC668 /* SFPRODISPLAYREGULAR.OTF in Resources */ = {isa = PBXBuildFile; fileRef = DE9B95EE27BF9DE0001EC668 /* SFPRODISPLAYREGULAR.OTF */; };
@@ -177,6 +179,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE6DA7FE27C621A40098770F /* Pods_ReverseWords_ReverseWordsUITests.framework in Frameworks */,
+				DE6DA7FF27C621AD0098770F /* Pods_ReverseWordsTests.framework in Frameworks */,
 				FD8B7029AD3EEF349C527549 /* Pods_ReverseWords.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
