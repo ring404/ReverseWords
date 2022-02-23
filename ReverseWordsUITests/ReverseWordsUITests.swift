@@ -15,12 +15,13 @@ class ReverseWordsUITests: XCTestCase {
         let textInput = app.textFields["textInput"]
         let reverseButton = app.buttons["reverseButton"]
         let testString = "Test string"
+        let properResult = true
         //        When
         app.launch()
         textInput.tap()
         textInput.typeText(testString)
         //        Then
-        XCTAssertTrue(reverseButton.isEnabled)
+        XCTAssertEqual(reverseButton.isEnabled, properResult)
         app.terminate()
     }
     
@@ -31,6 +32,7 @@ class ReverseWordsUITests: XCTestCase {
         let textInput = app.textFields["textInput"]
         let reverseButton = app.buttons["reverseButton"]
         let testString = "Test string"
+        let properResult = "tseT gnirts"
         //        When
         app.launch()
         textInput.tap()
@@ -38,7 +40,7 @@ class ReverseWordsUITests: XCTestCase {
         textOutput.tap()
         reverseButton.tap()
         //        Then
-        XCTAssertTrue(textOutput.value as? String == "tseT gnirts")
+        XCTAssertEqual(textOutput.value as? String , properResult)
         app.terminate()
     }
     
@@ -48,6 +50,7 @@ class ReverseWordsUITests: XCTestCase {
         let textInput = app.textFields["textInput"]
         let testString = "Test"
         let reverseButton = app.buttons["reverseButton"]
+        let properResult = true
         //        When
         app.launch()
         textInput.tap()
@@ -57,7 +60,7 @@ class ReverseWordsUITests: XCTestCase {
         app/*@START_MENU_TOKEN@*/.staticTexts["Cut"]/*[[".menus",".menuItems[\"Cut\"].staticTexts[\"Cut\"]",".staticTexts[\"Cut\"]"],[[[-1,2],[-1,1],[-1,0,1]],[[-1,2],[-1,1]]],[0]]@END_MENU_TOKEN@*/.tap()
         textInput.tap()
         //        Then
-        XCTAssertFalse(reverseButton.isEnabled)
+        XCTAssertEqual(reverseButton.isEnabled, properResult)
         app.terminate()
     }
     
@@ -68,6 +71,7 @@ class ReverseWordsUITests: XCTestCase {
         let testString = "Test string"
         let reverseButton = app.buttons["reverseButton"]
         let textOutput = app.textViews["textOutput"]
+        let properResult = "Text to reverse"
         //        When
         app.launch()
         textInput.tap()
@@ -76,7 +80,7 @@ class ReverseWordsUITests: XCTestCase {
         reverseButton.tap()
         reverseButton.tap()
         //        Then
-        XCTAssertTrue(textInput.value as? String == "Text to reverse")
+        XCTAssertEqual(textInput.value as? String, properResult)
         app.terminate()
     }
     
@@ -87,6 +91,7 @@ class ReverseWordsUITests: XCTestCase {
         let testString = "Test string"
         let reverseButton = app.buttons["reverseButton"]
         let textOutput = app.textViews["textOutput"]
+        let properResult = ""
         //        When
         app.launch()
         textInput.tap()
@@ -95,7 +100,7 @@ class ReverseWordsUITests: XCTestCase {
         reverseButton.tap()
         reverseButton.tap()
         //        Then
-        XCTAssertTrue(textOutput.value as? String == "")
+        XCTAssertEqual(textOutput.value as? String, properResult)
         app.terminate()
     }
     
@@ -106,6 +111,7 @@ class ReverseWordsUITests: XCTestCase {
         let testString = "Test string"
         let reverseButton = app.buttons["reverseButton"]
         let textOutput = app.textViews["textOutput"]
+        let properResult = true
         //        When
         app.launch()
         textInput.tap()
@@ -114,7 +120,7 @@ class ReverseWordsUITests: XCTestCase {
         reverseButton.tap()
         reverseButton.tap()
         //        Then
-        XCTAssertFalse(reverseButton.isEnabled)
+        XCTAssertEqual(reverseButton.isEnabled, properResult)
         app.terminate()
     }
     
@@ -124,6 +130,7 @@ class ReverseWordsUITests: XCTestCase {
         let textInput = app.textFields["textInput"]
         let testString = "Test"
         let reverseButton = app.buttons["reverseButton"]
+        let properResult = "Reverse"
         //        When
         app.launch()
         textInput.tap()
@@ -133,7 +140,7 @@ class ReverseWordsUITests: XCTestCase {
         app/*@START_MENU_TOKEN@*/.staticTexts["Cut"]/*[[".menus",".menuItems[\"Cut\"].staticTexts[\"Cut\"]",".staticTexts[\"Cut\"]"],[[[-1,2],[-1,1],[-1,0,1]],[[-1,2],[-1,1]]],[0]]@END_MENU_TOKEN@*/.tap()
         textInput.tap()
         //        Then
-        XCTAssertTrue(reverseButton.label == "Reverse")
+        XCTAssertEqual(reverseButton.label, properResult)
         app.terminate()
     }
     
@@ -143,13 +150,14 @@ class ReverseWordsUITests: XCTestCase {
         let textInput = app.textFields["textInput"]
         let testString = "Test"
         let reverseButton = app.buttons["reverseButton"]
+        let properResult = "Reverse"
         //        When
         app.launch()
         textInput.tap()
         textInput.typeText(testString)
         textInput.tap()
         //        Then
-        XCTAssertTrue(reverseButton.label == "Reverse")
+        XCTAssertEqual(reverseButton.label, properResult)
         app.terminate()
     }
     
@@ -160,6 +168,7 @@ class ReverseWordsUITests: XCTestCase {
         let testString = "Test string"
         let reverseButton = app.buttons["reverseButton"]
         let textOutput = app.textViews["textOutput"]
+        let properResult = "Clear"
         //        When
         app.launch()
         textInput.tap()
@@ -167,7 +176,7 @@ class ReverseWordsUITests: XCTestCase {
         textOutput.tap()
         reverseButton.tap()
         //        Then
-        XCTAssertTrue(reverseButton.label == "Clear")
+        XCTAssertEqual(reverseButton.label , properResult)
         app.terminate()
     }
     
@@ -178,6 +187,7 @@ class ReverseWordsUITests: XCTestCase {
         let testString = "Test string"
         let reverseButton = app.buttons["reverseButton"]
         let textOutput = app.textViews["textOutput"]
+        let properResult = true
         //        When
         app.launch()
         textInput.tap()
@@ -185,7 +195,7 @@ class ReverseWordsUITests: XCTestCase {
         textOutput.tap()
         reverseButton.tap()
         //        Then
-        XCTAssertTrue(reverseButton.isEnabled)
+        XCTAssertEqual(reverseButton.isEnabled, properResult)
         app.terminate()
     }
     
@@ -196,6 +206,7 @@ class ReverseWordsUITests: XCTestCase {
         let testString = "Test"
         let reverseButton = app.buttons["reverseButton"]
         let textOutput = app.textViews["textOutput"]
+        let properResult = "Reverse"
         //        When
         app.launch()
         textInput.tap()
@@ -205,7 +216,7 @@ class ReverseWordsUITests: XCTestCase {
         textInput.tap()
         textInput.typeText(testString)
         //        Then
-        XCTAssertTrue(reverseButton.label == "Reverse")
+        XCTAssertEqual(reverseButton.label, properResult)
         app.terminate()
     }
     
@@ -216,6 +227,7 @@ class ReverseWordsUITests: XCTestCase {
         let testString = "Test"
         let reverseButton = app.buttons["reverseButton"]
         let textOutput = app.textViews["textOutput"]
+        let properResult = "Clear"
         //        When
         app.launch()
         textInput.tap()
@@ -227,7 +239,7 @@ class ReverseWordsUITests: XCTestCase {
         textOutput.tap()
         reverseButton.tap()
         //        Then
-        XCTAssertTrue(reverseButton.label == "Clear")
+        XCTAssertEqual(reverseButton.label, properResult)
         app.terminate()
     }
     
@@ -238,6 +250,7 @@ class ReverseWordsUITests: XCTestCase {
         let testString = "Test string"
         let reverseButton = app.buttons["reverseButton"]
         let textOutput = app.textViews["textOutput"]
+        let properResult = "tseT tseTgnirts gnirts"
         //        When
         app.launch()
         textInput.tap()
@@ -249,7 +262,7 @@ class ReverseWordsUITests: XCTestCase {
         textOutput.tap()
         reverseButton.tap()
         //        Then
-        XCTAssertTrue(textOutput.value as? String == "tseT tseTgnirts gnirts")
+        XCTAssertEqual(textOutput.value as? String, properResult)
         app.terminate()
     }
 }

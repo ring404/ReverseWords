@@ -13,10 +13,11 @@ class ReverseWordsUnitTests: XCTestCase {
         //        Given
         let testString = "Test string"
         let reverseManager = ReverseStringManager()
+        let properResult = "tseT gnirts"
         //        When
         let result = reverseManager.reverseString(text: testString)
         //        Then
-        XCTAssertTrue(result == "tseT gnirts")
+        XCTAssertEqual(result, properResult)
     }
     
     private func testStringNotNil() {

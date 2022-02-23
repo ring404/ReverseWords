@@ -28,6 +28,16 @@ class AnagramsViewController: UIViewController {
     var resultButton = UIButton()
     var outputText = UITextView()
     
+    // MARK: - Inretface rotate adjustments
+    
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        return UIInterfaceOrientationMask.portrait
+    }
+    
+    override var shouldAutorotate: Bool {
+        return false
+    }
+    
     // MARK: - Lifecycle
     
     override func viewDidLoad() {
@@ -35,6 +45,7 @@ class AnagramsViewController: UIViewController {
         addSubviews()
         setupLayout()
         configureUI()
+        setupTargets()
         setCccessibilityIdentifiers()
     }
     
@@ -85,9 +96,12 @@ class AnagramsViewController: UIViewController {
         defaulExplanationLabel.text = "All characters except alphabetic symbols"
         resultButton.setTitle("Result", for: .normal)
         resultButton.setTitleColor(.systemBlue, for: .normal)
-        resultButton.addTarget(self, action: #selector(reverseButtonAction(_:)), for: UIControl.Event.touchUpInside)
         outputText.font = UIFont.systemFont(ofSize: 15)
         outputText.isEditable = false
+    }
+    
+    func setupTargets() {
+        resultButton.addTarget(self, action: #selector(reverseButtonAction(_:)), for: UIControl.Event.touchUpInside)
         inputText.addTarget(self, action: #selector(inputTextEditingDidEnd), for: .editingChanged)
         inputExclusionField.addTarget(self, action: #selector(inputTextEditingDidEnd), for: .editingChanged)
     }
@@ -100,13 +114,8 @@ class AnagramsViewController: UIViewController {
     }
     
     @objc func inputTextEditingDidEnd(textField: UITextField) {
-        if currentState == .def {
-            outputText.text = reverseStringManager.reverseStringDefaultState(text: inputText.text ?? "")
-        }
-        if currentState == .custom {
-            outputText.text = reverseStringManager.reverseStringWithExclusion(text: inputText.text ?? "", exclusion: inputExclusionField.text ?? "")
-        }
-      }
+        fillOutputDependsOnState()
+    }
     
     func addSubviews() {
         view.addSubview(inputText)
@@ -128,6 +137,11 @@ class AnagramsViewController: UIViewController {
     }
     
     @objc func reverseButtonAction(_ sender:UIButton!) {
+        self.view.endEditing(true)
+        fillOutputDependsOnState()
+    }
+    
+    func fillOutputDependsOnState()  {
         if currentState == .def {
             outputText.text = reverseStringManager.reverseStringDefaultState(text: inputText.text ?? "")
         }
@@ -137,6 +151,7 @@ class AnagramsViewController: UIViewController {
     }
     
     @objc func handleSegmentedControlValueChanged(_ sender : UISegmentedControl) {
+        self.view.endEditing(true)
         switch (segmentedSwitcher.selectedSegmentIndex) {
         case 0:
             currentState = .def
@@ -158,7 +173,6 @@ class AnagramsViewController: UIViewController {
             defaulExplanationLabel.isHidden = true
             inputExclusionField.isHidden = false
             outputText.text.removeAll()
-            inputTextEditingDidEnd(textField: inputExclusionField)
         }
         switch currentState {
         case .def:
@@ -167,7 +181,6 @@ class AnagramsViewController: UIViewController {
             switchToCustomSegment()
         }
     }
-    
 }
 
 extension AnagramsViewController {
