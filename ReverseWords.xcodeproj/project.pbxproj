@@ -7,14 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0C24B1910F4BE5F913C99F56 /* Pods_ReverseWordsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C2222EE8897DD27C517823B /* Pods_ReverseWordsTests.framework */; };
-		30396073336504BE4C2363AE /* Pods_ReverseWords_ReverseWordsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7F92708F050EA877CED07A8 /* Pods_ReverseWords_ReverseWordsUITests.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		DE39FC812769F49C003CD1B7 /* ReverseStringManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE39FC802769F49C003CD1B7 /* ReverseStringManager.swift */; };
 		DE651BB527B9002700A47114 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE651BB427B9002700A47114 /* Extensions.swift */; };
 		DE651BBD27B9265C00A47114 /* ReverseWordsUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE651BBC27B9265C00A47114 /* ReverseWordsUnitTests.swift */; };
 		DE651BCE27B93D4D00A47114 /* ReverseWordsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE651BCD27B93D4D00A47114 /* ReverseWordsUITests.swift */; };
-		DE6DA7FE27C621A40098770F /* Pods_ReverseWords_ReverseWordsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7F92708F050EA877CED07A8 /* Pods_ReverseWords_ReverseWordsUITests.framework */; };
-		DE6DA7FF27C621AD0098770F /* Pods_ReverseWordsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C2222EE8897DD27C517823B /* Pods_ReverseWordsTests.framework */; };
 		DE73A70B27C1206000801126 /* AnagramsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE73A70A27C1206000801126 /* AnagramsViewController.swift */; };
 		DE9B95F027BF9DE0001EC668 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9B95EC27BF9DE0001EC668 /* Extensions.swift */; };
 		DE9B95F127BF9DE0001EC668 /* SFPRODISPLAYREGULAR.OTF in Resources */ = {isa = PBXBuildFile; fileRef = DE9B95EE27BF9DE0001EC668 /* SFPRODISPLAYREGULAR.OTF */; };
@@ -101,10 +97,8 @@
 
 /* Begin PBXFileReference section */
 		41DA4415F37BBEB828848B51 /* Pods-ReverseWords.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReverseWords.debug.xcconfig"; path = "Target Support Files/Pods-ReverseWords/Pods-ReverseWords.debug.xcconfig"; sourceTree = "<group>"; };
-		4C2222EE8897DD27C517823B /* Pods_ReverseWordsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReverseWordsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D5AB88A1BDA0C87964AD357 /* Pods-ReverseWordsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReverseWordsTests.debug.xcconfig"; path = "Target Support Files/Pods-ReverseWordsTests/Pods-ReverseWordsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		ACD8F870503DEB1020D23F42 /* Pods-ReverseWords-ReverseWordsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReverseWords-ReverseWordsUITests.release.xcconfig"; path = "Target Support Files/Pods-ReverseWords-ReverseWordsUITests/Pods-ReverseWords-ReverseWordsUITests.release.xcconfig"; sourceTree = "<group>"; };
-		B7F92708F050EA877CED07A8 /* Pods_ReverseWords_ReverseWordsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReverseWords_ReverseWordsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C35DF6B135264A3D95C2BD08 /* Pods-ReverseWords.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReverseWords.release.xcconfig"; path = "Target Support Files/Pods-ReverseWords/Pods-ReverseWords.release.xcconfig"; sourceTree = "<group>"; };
 		D2A45CC4D8682B6E485629CE /* Pods-ReverseWords-ReverseWordsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReverseWords-ReverseWordsUITests.debug.xcconfig"; path = "Target Support Files/Pods-ReverseWords-ReverseWordsUITests/Pods-ReverseWords-ReverseWordsUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		DE39FC802769F49C003CD1B7 /* ReverseStringManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReverseStringManager.swift; sourceTree = "<group>"; };
@@ -141,7 +135,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C24B1910F4BE5F913C99F56 /* Pods_ReverseWordsTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,7 +142,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				30396073336504BE4C2363AE /* Pods_ReverseWords_ReverseWordsUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -179,8 +171,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE6DA7FE27C621A40098770F /* Pods_ReverseWords_ReverseWordsUITests.framework in Frameworks */,
-				DE6DA7FF27C621AD0098770F /* Pods_ReverseWordsTests.framework in Frameworks */,
 				FD8B7029AD3EEF349C527549 /* Pods_ReverseWords.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -205,8 +195,6 @@
 			isa = PBXGroup;
 			children = (
 				E4B74393C7873A2BFB9EA655 /* Pods_ReverseWords.framework */,
-				B7F92708F050EA877CED07A8 /* Pods_ReverseWords_ReverseWordsUITests.framework */,
-				4C2222EE8897DD27C517823B /* Pods_ReverseWordsTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
