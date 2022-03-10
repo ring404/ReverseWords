@@ -8,29 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		DE39FC812769F49C003CD1B7 /* ReverseStringManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE39FC802769F49C003CD1B7 /* ReverseStringManager.swift */; };
-		DE651BB527B9002700A47114 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE651BB427B9002700A47114 /* Extensions.swift */; };
 		DE651BBD27B9265C00A47114 /* ReverseWordsUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE651BBC27B9265C00A47114 /* ReverseWordsUnitTests.swift */; };
 		DE651BCE27B93D4D00A47114 /* ReverseWordsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE651BCD27B93D4D00A47114 /* ReverseWordsUITests.swift */; };
-		DE73A70B27C1206000801126 /* AnagramsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE73A70A27C1206000801126 /* AnagramsViewController.swift */; };
-		DE9B95F027BF9DE0001EC668 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9B95EC27BF9DE0001EC668 /* Extensions.swift */; };
-		DE9B95F127BF9DE0001EC668 /* SFPRODISPLAYREGULAR.OTF in Resources */ = {isa = PBXBuildFile; fileRef = DE9B95EE27BF9DE0001EC668 /* SFPRODISPLAYREGULAR.OTF */; };
-		DE9B95F227BF9DE0001EC668 /* SFPRODISPLAYBOLD.OTF in Resources */ = {isa = PBXBuildFile; fileRef = DE9B95EF27BF9DE0001EC668 /* SFPRODISPLAYBOLD.OTF */; };
-		DEB9B6F127C50EBA008E00E3 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE651BB427B9002700A47114 /* Extensions.swift */; };
-		DEB9B6F327C50EBA008E00E3 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE90647273B0E91006D252E /* MainViewController.swift */; };
-		DEB9B6F427C50EBA008E00E3 /* AnagramsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE73A70A27C1206000801126 /* AnagramsViewController.swift */; };
-		DEB9B6F527C50EBA008E00E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE90643273B0E91006D252E /* AppDelegate.swift */; };
-		DEB9B6F627C50EBA008E00E3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE90645273B0E91006D252E /* SceneDelegate.swift */; };
-		DEB9B6F727C50EBA008E00E3 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9B95EC27BF9DE0001EC668 /* Extensions.swift */; };
-		DEB9B6F927C50EBA008E00E3 /* Pods_ReverseWords.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4B74393C7873A2BFB9EA655 /* Pods_ReverseWords.framework */; };
-		DEB9B6FB27C50EBA008E00E3 /* SFPRODISPLAYREGULAR.OTF in Resources */ = {isa = PBXBuildFile; fileRef = DEEA7A8A2752567300E791B3 /* SFPRODISPLAYREGULAR.OTF */; };
-		DEB9B6FC27C50EBA008E00E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEE9064C273B0E96006D252E /* Assets.xcassets */; };
-		DEB9B6FD27C50EBA008E00E3 /* SFPRODISPLAYBOLD.OTF in Resources */ = {isa = PBXBuildFile; fileRef = DEEA7A892752567300E791B3 /* SFPRODISPLAYBOLD.OTF */; };
-		DEB9B6FE27C50EBA008E00E3 /* SFPRODISPLAYREGULAR.OTF in Resources */ = {isa = PBXBuildFile; fileRef = DE9B95EE27BF9DE0001EC668 /* SFPRODISPLAYREGULAR.OTF */; };
-		DEB9B6FF27C50EBA008E00E3 /* SFPRODISPLAYBOLD.OTF in Resources */ = {isa = PBXBuildFile; fileRef = DE9B95EF27BF9DE0001EC668 /* SFPRODISPLAYBOLD.OTF */; };
-		DEB9B70027C50EBA008E00E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEE90649273B0E91006D252E /* Main.storyboard */; };
-		DEB9B71027C51410008E00E3 /* AnagramReverseWordsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB9B70F27C51410008E00E3 /* AnagramReverseWordsTests.swift */; };
-		DEB9B71627C514CE008E00E3 /* ReverseStringManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE39FC802769F49C003CD1B7 /* ReverseStringManager.swift */; };
-		DEB9B71E27C5174D008E00E3 /* AnagramReverseWordsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB9B71D27C5174D008E00E3 /* AnagramReverseWordsUITests.swift */; };
+		DE6CD55627C905B8002CA3F1 /* UIFont+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6CD55527C905B8002CA3F1 /* UIFont+extension.swift */; };
+		DE6CD55827C905F9002CA3F1 /* UIViewController+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6CD55727C905F9002CA3F1 /* UIViewController+extension.swift */; };
+		DE6CD55A27C90611002CA3F1 /* UITextField+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6CD55927C90611002CA3F1 /* UITextField+extension.swift */; };
 		DEE90644273B0E91006D252E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE90643273B0E91006D252E /* AppDelegate.swift */; };
 		DEE90646273B0E91006D252E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE90645273B0E91006D252E /* SceneDelegate.swift */; };
 		DEE90648273B0E91006D252E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE90647273B0E91006D252E /* MainViewController.swift */; };
@@ -38,7 +20,6 @@
 		DEE9064D273B0E96006D252E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEE9064C273B0E96006D252E /* Assets.xcassets */; };
 		DEEA7A8B2752567400E791B3 /* SFPRODISPLAYBOLD.OTF in Resources */ = {isa = PBXBuildFile; fileRef = DEEA7A892752567300E791B3 /* SFPRODISPLAYBOLD.OTF */; };
 		DEEA7A8C2752567400E791B3 /* SFPRODISPLAYREGULAR.OTF in Resources */ = {isa = PBXBuildFile; fileRef = DEEA7A8A2752567300E791B3 /* SFPRODISPLAYREGULAR.OTF */; };
-		FD8B7029AD3EEF349C527549 /* Pods_ReverseWords.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4B74393C7873A2BFB9EA655 /* Pods_ReverseWords.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,20 +37,6 @@
 			remoteGlobalIDString = DEE9063F273B0E91006D252E;
 			remoteInfo = ReverseWords;
 		};
-		DEB9B71127C51410008E00E3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DEE90638273B0E91006D252E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = DEB9B6EE27C50EBA008E00E3;
-			remoteInfo = AnagramReverseWords;
-		};
-		DEB9B72127C5174D008E00E3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DEE90638273B0E91006D252E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = DEB9B6EE27C50EBA008E00E3;
-			remoteInfo = AnagramReverseWords;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -83,40 +50,17 @@
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DEB9B70227C50EBA008E00E3 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		41DA4415F37BBEB828848B51 /* Pods-ReverseWords.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReverseWords.debug.xcconfig"; path = "Target Support Files/Pods-ReverseWords/Pods-ReverseWords.debug.xcconfig"; sourceTree = "<group>"; };
-		4D5AB88A1BDA0C87964AD357 /* Pods-ReverseWordsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReverseWordsTests.debug.xcconfig"; path = "Target Support Files/Pods-ReverseWordsTests/Pods-ReverseWordsTests.debug.xcconfig"; sourceTree = "<group>"; };
-		ACD8F870503DEB1020D23F42 /* Pods-ReverseWords-ReverseWordsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReverseWords-ReverseWordsUITests.release.xcconfig"; path = "Target Support Files/Pods-ReverseWords-ReverseWordsUITests/Pods-ReverseWords-ReverseWordsUITests.release.xcconfig"; sourceTree = "<group>"; };
-		C35DF6B135264A3D95C2BD08 /* Pods-ReverseWords.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReverseWords.release.xcconfig"; path = "Target Support Files/Pods-ReverseWords/Pods-ReverseWords.release.xcconfig"; sourceTree = "<group>"; };
-		D2A45CC4D8682B6E485629CE /* Pods-ReverseWords-ReverseWordsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReverseWords-ReverseWordsUITests.debug.xcconfig"; path = "Target Support Files/Pods-ReverseWords-ReverseWordsUITests/Pods-ReverseWords-ReverseWordsUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		DE39FC802769F49C003CD1B7 /* ReverseStringManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReverseStringManager.swift; sourceTree = "<group>"; };
-		DE651BB427B9002700A47114 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		DE651BBA27B9265C00A47114 /* ReverseWordsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReverseWordsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE651BBC27B9265C00A47114 /* ReverseWordsUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReverseWordsUnitTests.swift; sourceTree = "<group>"; };
 		DE651BCB27B93D4D00A47114 /* ReverseWordsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReverseWordsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE651BCD27B93D4D00A47114 /* ReverseWordsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReverseWordsUITests.swift; sourceTree = "<group>"; };
-		DE73A70A27C1206000801126 /* AnagramsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnagramsViewController.swift; sourceTree = "<group>"; };
-		DE9B95EC27BF9DE0001EC668 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
-		DE9B95EE27BF9DE0001EC668 /* SFPRODISPLAYREGULAR.OTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = SFPRODISPLAYREGULAR.OTF; sourceTree = "<group>"; };
-		DE9B95EF27BF9DE0001EC668 /* SFPRODISPLAYBOLD.OTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = SFPRODISPLAYBOLD.OTF; sourceTree = "<group>"; };
-		DEB9B70727C50EBA008E00E3 /* AnagramReverseWords.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnagramReverseWords.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		DEB9B70827C50EBA008E00E3 /* ReverseWords copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "ReverseWords copy-Info.plist"; path = "/Users/qqrr/Documents/SwiftStudy2/Current apps/FoxMinded/ReverseWords_codedUI/ReverseWords copy-Info.plist"; sourceTree = "<absolute>"; };
-		DEB9B70D27C51410008E00E3 /* AnagramReverseWordsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnagramReverseWordsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DEB9B70F27C51410008E00E3 /* AnagramReverseWordsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnagramReverseWordsTests.swift; sourceTree = "<group>"; };
-		DEB9B71B27C5174D008E00E3 /* AnagramReverseWordsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnagramReverseWordsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DEB9B71D27C5174D008E00E3 /* AnagramReverseWordsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnagramReverseWordsUITests.swift; sourceTree = "<group>"; };
+		DE6CD55527C905B8002CA3F1 /* UIFont+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+extension.swift"; sourceTree = "<group>"; };
+		DE6CD55727C905F9002CA3F1 /* UIViewController+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+extension.swift"; sourceTree = "<group>"; };
+		DE6CD55927C90611002CA3F1 /* UITextField+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+extension.swift"; sourceTree = "<group>"; };
 		DEE90640273B0E91006D252E /* ReverseWords.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReverseWords.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEE90643273B0E91006D252E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DEE90645273B0E91006D252E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -126,8 +70,6 @@
 		DEE90651273B0E96006D252E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DEEA7A892752567300E791B3 /* SFPRODISPLAYBOLD.OTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = SFPRODISPLAYBOLD.OTF; sourceTree = "<group>"; };
 		DEEA7A8A2752567300E791B3 /* SFPRODISPLAYREGULAR.OTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = SFPRODISPLAYREGULAR.OTF; sourceTree = "<group>"; };
-		E4B74393C7873A2BFB9EA655 /* Pods_ReverseWords.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReverseWords.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EE025D0A6110074FE263A945 /* Pods-ReverseWordsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReverseWordsTests.release.xcconfig"; path = "Target Support Files/Pods-ReverseWordsTests/Pods-ReverseWordsTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,60 +87,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DEB9B6F827C50EBA008E00E3 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DEB9B6F927C50EBA008E00E3 /* Pods_ReverseWords.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DEB9B70A27C51410008E00E3 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DEB9B71827C5174D008E00E3 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		DEE9063D273B0E91006D252E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD8B7029AD3EEF349C527549 /* Pods_ReverseWords.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		7B9BE556B408AA7A44D94169 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				41DA4415F37BBEB828848B51 /* Pods-ReverseWords.debug.xcconfig */,
-				C35DF6B135264A3D95C2BD08 /* Pods-ReverseWords.release.xcconfig */,
-				D2A45CC4D8682B6E485629CE /* Pods-ReverseWords-ReverseWordsUITests.debug.xcconfig */,
-				ACD8F870503DEB1020D23F42 /* Pods-ReverseWords-ReverseWordsUITests.release.xcconfig */,
-				4D5AB88A1BDA0C87964AD357 /* Pods-ReverseWordsTests.debug.xcconfig */,
-				EE025D0A6110074FE263A945 /* Pods-ReverseWordsTests.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
-		C0A1D15BEB3C100407B12C12 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				E4B74393C7873A2BFB9EA655 /* Pods_ReverseWords.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		DE651BBB27B9265C00A47114 /* ReverseWordsTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -215,29 +113,12 @@
 			path = ReverseWordsUITests;
 			sourceTree = "<group>";
 		};
-		DE9B95EB27BF9DE0001EC668 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				DE9B95EC27BF9DE0001EC668 /* Extensions.swift */,
-			);
-			name = Extensions;
-			path = ReverseWords/Extensions;
-			sourceTree = "<group>";
-		};
-		DE9B95ED27BF9DE0001EC668 /* Fonts */ = {
-			isa = PBXGroup;
-			children = (
-				DE9B95EE27BF9DE0001EC668 /* SFPRODISPLAYREGULAR.OTF */,
-				DE9B95EF27BF9DE0001EC668 /* SFPRODISPLAYBOLD.OTF */,
-			);
-			name = Fonts;
-			path = ReverseWords/Fonts;
-			sourceTree = "<group>";
-		};
 		DEA71EF9276121C2005573E8 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				DE651BB427B9002700A47114 /* Extensions.swift */,
+				DE6CD55527C905B8002CA3F1 /* UIFont+extension.swift */,
+				DE6CD55927C90611002CA3F1 /* UITextField+extension.swift */,
+				DE6CD55727C905F9002CA3F1 /* UIViewController+extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -251,36 +132,13 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
-		DEB9B70E27C51410008E00E3 /* AnagramReverseWordsTests */ = {
-			isa = PBXGroup;
-			children = (
-				DEB9B70F27C51410008E00E3 /* AnagramReverseWordsTests.swift */,
-			);
-			path = AnagramReverseWordsTests;
-			sourceTree = "<group>";
-		};
-		DEB9B71C27C5174D008E00E3 /* AnagramReverseWordsUITests */ = {
-			isa = PBXGroup;
-			children = (
-				DEB9B71D27C5174D008E00E3 /* AnagramReverseWordsUITests.swift */,
-			);
-			path = AnagramReverseWordsUITests;
-			sourceTree = "<group>";
-		};
 		DEE90637273B0E91006D252E = {
 			isa = PBXGroup;
 			children = (
-				DE9B95EB27BF9DE0001EC668 /* Extensions */,
-				DE9B95ED27BF9DE0001EC668 /* Fonts */,
 				DEE90642273B0E91006D252E /* ReverseWords */,
 				DE651BBB27B9265C00A47114 /* ReverseWordsTests */,
 				DE651BCC27B93D4D00A47114 /* ReverseWordsUITests */,
-				DEB9B70E27C51410008E00E3 /* AnagramReverseWordsTests */,
-				DEB9B71C27C5174D008E00E3 /* AnagramReverseWordsUITests */,
 				DEE90641273B0E91006D252E /* Products */,
-				7B9BE556B408AA7A44D94169 /* Pods */,
-				C0A1D15BEB3C100407B12C12 /* Frameworks */,
-				DEB9B70827C50EBA008E00E3 /* ReverseWords copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -290,9 +148,6 @@
 				DEE90640273B0E91006D252E /* ReverseWords.app */,
 				DE651BBA27B9265C00A47114 /* ReverseWordsTests.xctest */,
 				DE651BCB27B93D4D00A47114 /* ReverseWordsUITests.xctest */,
-				DEB9B70727C50EBA008E00E3 /* AnagramReverseWords.app */,
-				DEB9B70D27C51410008E00E3 /* AnagramReverseWordsTests.xctest */,
-				DEB9B71B27C5174D008E00E3 /* AnagramReverseWordsUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -305,7 +160,6 @@
 				DEE90643273B0E91006D252E /* AppDelegate.swift */,
 				DEE90645273B0E91006D252E /* SceneDelegate.swift */,
 				DE39FC802769F49C003CD1B7 /* ReverseStringManager.swift */,
-				DE73A70A27C1206000801126 /* AnagramsViewController.swift */,
 				DEE90647273B0E91006D252E /* MainViewController.swift */,
 				DEE90649273B0E91006D252E /* Main.storyboard */,
 				DEE9064C273B0E96006D252E /* Assets.xcassets */,
@@ -321,7 +175,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DE651BC027B9265C00A47114 /* Build configuration list for PBXNativeTarget "ReverseWordsTests" */;
 			buildPhases = (
-				64E6E6D542189B3B643D3F8D /* [CP] Check Pods Manifest.lock */,
 				DE651BB627B9265C00A47114 /* Sources */,
 				DE651BB727B9265C00A47114 /* Frameworks */,
 				DE651BB827B9265C00A47114 /* Resources */,
@@ -340,11 +193,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DE651BD327B93D4D00A47114 /* Build configuration list for PBXNativeTarget "ReverseWordsUITests" */;
 			buildPhases = (
-				54B15EC66083FA4D45A9FEA7 /* [CP] Check Pods Manifest.lock */,
 				DE651BC727B93D4D00A47114 /* Sources */,
 				DE651BC827B93D4D00A47114 /* Frameworks */,
 				DE651BC927B93D4D00A47114 /* Resources */,
-				0F023A987780D7C1FB19DD8F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -356,74 +207,15 @@
 			productReference = DE651BCB27B93D4D00A47114 /* ReverseWordsUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
-		DEB9B6EE27C50EBA008E00E3 /* AnagramReverseWords */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = DEB9B70427C50EBA008E00E3 /* Build configuration list for PBXNativeTarget "AnagramReverseWords" */;
-			buildPhases = (
-				DEB9B6EF27C50EBA008E00E3 /* [CP] Check Pods Manifest.lock */,
-				DEB9B6F027C50EBA008E00E3 /* Sources */,
-				DEB9B6F827C50EBA008E00E3 /* Frameworks */,
-				DEB9B6FA27C50EBA008E00E3 /* Resources */,
-				DEB9B70127C50EBA008E00E3 /* ShellScript */,
-				DEB9B70227C50EBA008E00E3 /* Embed Frameworks */,
-				DEB9B70327C50EBA008E00E3 /* [CP] Embed Pods Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = AnagramReverseWords;
-			productName = ReverseWords;
-			productReference = DEB9B70727C50EBA008E00E3 /* AnagramReverseWords.app */;
-			productType = "com.apple.product-type.application";
-		};
-		DEB9B70C27C51410008E00E3 /* AnagramReverseWordsTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = DEB9B71327C51410008E00E3 /* Build configuration list for PBXNativeTarget "AnagramReverseWordsTests" */;
-			buildPhases = (
-				DEB9B70927C51410008E00E3 /* Sources */,
-				DEB9B70A27C51410008E00E3 /* Frameworks */,
-				DEB9B70B27C51410008E00E3 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				DEB9B71227C51410008E00E3 /* PBXTargetDependency */,
-			);
-			name = AnagramReverseWordsTests;
-			productName = AnagramReverseWordsTests;
-			productReference = DEB9B70D27C51410008E00E3 /* AnagramReverseWordsTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		DEB9B71A27C5174D008E00E3 /* AnagramReverseWordsUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = DEB9B72327C5174D008E00E3 /* Build configuration list for PBXNativeTarget "AnagramReverseWordsUITests" */;
-			buildPhases = (
-				DEB9B71727C5174D008E00E3 /* Sources */,
-				DEB9B71827C5174D008E00E3 /* Frameworks */,
-				DEB9B71927C5174D008E00E3 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				DEB9B72227C5174D008E00E3 /* PBXTargetDependency */,
-			);
-			name = AnagramReverseWordsUITests;
-			productName = AnagramReverseWordsUITests;
-			productReference = DEB9B71B27C5174D008E00E3 /* AnagramReverseWordsUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 		DEE9063F273B0E91006D252E /* ReverseWords */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = DEE90654273B0E96006D252E /* Build configuration list for PBXNativeTarget "ReverseWords" */;
 			buildPhases = (
-				DACCEEC61D5A8AFC3A4A57BA /* [CP] Check Pods Manifest.lock */,
 				DEE9063C273B0E91006D252E /* Sources */,
 				DEE9063D273B0E91006D252E /* Frameworks */,
 				DEE9063E273B0E91006D252E /* Resources */,
 				DEA71F00276124B8005573E8 /* ShellScript */,
 				DE9FF1C927BE4D02001D1114 /* Embed Frameworks */,
-				99A2EC93EB4F36D06ECC9DF3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -452,14 +244,6 @@
 						CreatedOnToolsVersion = 13.1;
 						TestTargetID = DEE9063F273B0E91006D252E;
 					};
-					DEB9B70C27C51410008E00E3 = {
-						CreatedOnToolsVersion = 13.1;
-						TestTargetID = DEB9B6EE27C50EBA008E00E3;
-					};
-					DEB9B71A27C5174D008E00E3 = {
-						CreatedOnToolsVersion = 13.1;
-						TestTargetID = DEB9B6EE27C50EBA008E00E3;
-					};
 					DEE9063F273B0E91006D252E = {
 						CreatedOnToolsVersion = 13.1;
 					};
@@ -474,8 +258,6 @@
 				Base,
 			);
 			mainGroup = DEE90637273B0E91006D252E;
-			packageReferences = (
-			);
 			productRefGroup = DEE90641273B0E91006D252E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -483,9 +265,6 @@
 				DEE9063F273B0E91006D252E /* ReverseWords */,
 				DE651BB927B9265C00A47114 /* ReverseWordsTests */,
 				DE651BCA27B93D4D00A47114 /* ReverseWordsUITests */,
-				DEB9B6EE27C50EBA008E00E3 /* AnagramReverseWords */,
-				DEB9B70C27C51410008E00E3 /* AnagramReverseWordsTests */,
-				DEB9B71A27C5174D008E00E3 /* AnagramReverseWordsUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -505,33 +284,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DEB9B6FA27C50EBA008E00E3 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DEB9B6FB27C50EBA008E00E3 /* SFPRODISPLAYREGULAR.OTF in Resources */,
-				DEB9B6FC27C50EBA008E00E3 /* Assets.xcassets in Resources */,
-				DEB9B6FD27C50EBA008E00E3 /* SFPRODISPLAYBOLD.OTF in Resources */,
-				DEB9B6FE27C50EBA008E00E3 /* SFPRODISPLAYREGULAR.OTF in Resources */,
-				DEB9B6FF27C50EBA008E00E3 /* SFPRODISPLAYBOLD.OTF in Resources */,
-				DEB9B70027C50EBA008E00E3 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DEB9B70B27C51410008E00E3 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DEB9B71927C5174D008E00E3 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		DEE9063E273B0E91006D252E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -539,8 +291,6 @@
 				DEEA7A8C2752567400E791B3 /* SFPRODISPLAYREGULAR.OTF in Resources */,
 				DEE9064D273B0E96006D252E /* Assets.xcassets in Resources */,
 				DEEA7A8B2752567400E791B3 /* SFPRODISPLAYBOLD.OTF in Resources */,
-				DE9B95F127BF9DE0001EC668 /* SFPRODISPLAYREGULAR.OTF in Resources */,
-				DE9B95F227BF9DE0001EC668 /* SFPRODISPLAYBOLD.OTF in Resources */,
 				DEE9064B273B0E91006D252E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -548,106 +298,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0F023A987780D7C1FB19DD8F /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ReverseWords-ReverseWordsUITests/Pods-ReverseWords-ReverseWordsUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ReverseWords-ReverseWordsUITests/Pods-ReverseWords-ReverseWordsUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ReverseWords-ReverseWordsUITests/Pods-ReverseWords-ReverseWordsUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		54B15EC66083FA4D45A9FEA7 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ReverseWords-ReverseWordsUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		64E6E6D542189B3B643D3F8D /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ReverseWordsTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		99A2EC93EB4F36D06ECC9DF3 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ReverseWords/Pods-ReverseWords-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ReverseWords/Pods-ReverseWords-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ReverseWords/Pods-ReverseWords-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		DACCEEC61D5A8AFC3A4A57BA /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ReverseWords-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		DEA71F00276124B8005573E8 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -664,62 +314,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "#if which swiftlint >/dev/null; then\n#swiftlint\n#else\n#  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\n#fi\n";
-		};
-		DEB9B6EF27C50EBA008E00E3 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ReverseWords-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		DEB9B70127C50EBA008E00E3 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "#if which swiftlint >/dev/null; then\n#swiftlint\n#else\n#  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\n#fi\n";
-		};
-		DEB9B70327C50EBA008E00E3 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ReverseWords/Pods-ReverseWords-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ReverseWords/Pods-ReverseWords-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ReverseWords/Pods-ReverseWords-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -740,47 +334,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DEB9B6F027C50EBA008E00E3 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DEB9B6F127C50EBA008E00E3 /* Extensions.swift in Sources */,
-				DEB9B6F327C50EBA008E00E3 /* MainViewController.swift in Sources */,
-				DEB9B6F427C50EBA008E00E3 /* AnagramsViewController.swift in Sources */,
-				DEB9B6F527C50EBA008E00E3 /* AppDelegate.swift in Sources */,
-				DEB9B71627C514CE008E00E3 /* ReverseStringManager.swift in Sources */,
-				DEB9B6F627C50EBA008E00E3 /* SceneDelegate.swift in Sources */,
-				DEB9B6F727C50EBA008E00E3 /* Extensions.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DEB9B70927C51410008E00E3 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DEB9B71027C51410008E00E3 /* AnagramReverseWordsTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DEB9B71727C5174D008E00E3 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DEB9B71E27C5174D008E00E3 /* AnagramReverseWordsUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		DEE9063C273B0E91006D252E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE651BB527B9002700A47114 /* Extensions.swift in Sources */,
+				DE6CD55827C905F9002CA3F1 /* UIViewController+extension.swift in Sources */,
+				DE6CD55627C905B8002CA3F1 /* UIFont+extension.swift in Sources */,
 				DE39FC812769F49C003CD1B7 /* ReverseStringManager.swift in Sources */,
 				DEE90648273B0E91006D252E /* MainViewController.swift in Sources */,
-				DE73A70B27C1206000801126 /* AnagramsViewController.swift in Sources */,
 				DEE90644273B0E91006D252E /* AppDelegate.swift in Sources */,
+				DE6CD55A27C90611002CA3F1 /* UITextField+extension.swift in Sources */,
 				DEE90646273B0E91006D252E /* SceneDelegate.swift in Sources */,
-				DE9B95F027BF9DE0001EC668 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -796,16 +360,6 @@
 			isa = PBXTargetDependency;
 			target = DEE9063F273B0E91006D252E /* ReverseWords */;
 			targetProxy = DE651BD127B93D4D00A47114 /* PBXContainerItemProxy */;
-		};
-		DEB9B71227C51410008E00E3 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = DEB9B6EE27C50EBA008E00E3 /* AnagramReverseWords */;
-			targetProxy = DEB9B71127C51410008E00E3 /* PBXContainerItemProxy */;
-		};
-		DEB9B72227C5174D008E00E3 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = DEB9B6EE27C50EBA008E00E3 /* AnagramReverseWords */;
-			targetProxy = DEB9B72127C5174D008E00E3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -823,7 +377,6 @@
 /* Begin XCBuildConfiguration section */
 		DE651BC127B9265C00A47114 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4D5AB88A1BDA0C87964AD357 /* Pods-ReverseWordsTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -847,7 +400,6 @@
 		};
 		DE651BC227B9265C00A47114 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EE025D0A6110074FE263A945 /* Pods-ReverseWordsTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -871,7 +423,6 @@
 		};
 		DE651BD427B93D4D00A47114 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D2A45CC4D8682B6E485629CE /* Pods-ReverseWords-ReverseWordsUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -894,7 +445,6 @@
 		};
 		DE651BD527B93D4D00A47114 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = ACD8F870503DEB1020D23F42 /* Pods-ReverseWords-ReverseWordsUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -912,156 +462,6 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = ReverseWords;
-			};
-			name = Release;
-		};
-		DEB9B70527C50EBA008E00E3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 41DA4415F37BBEB828848B51 /* Pods-ReverseWords.debug.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = K75VWLJS7A;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "ReverseWords copy-Info.plist";
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = simple.ReverseWords;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
-			};
-			name = Debug;
-		};
-		DEB9B70627C50EBA008E00E3 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C35DF6B135264A3D95C2BD08 /* Pods-ReverseWords.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = K75VWLJS7A;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "ReverseWords copy-Info.plist";
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = simple.ReverseWords;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
-			};
-			name = Release;
-		};
-		DEB9B71427C51410008E00E3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = K75VWLJS7A;
-				GENERATE_INFOPLIST_FILE = YES;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = empty.AnagramReverseWordsTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AnagramReverseWords.app/AnagramReverseWords";
-			};
-			name = Debug;
-		};
-		DEB9B71527C51410008E00E3 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = K75VWLJS7A;
-				GENERATE_INFOPLIST_FILE = YES;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = empty.AnagramReverseWordsTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AnagramReverseWords.app/AnagramReverseWords";
-			};
-			name = Release;
-		};
-		DEB9B72427C5174D008E00E3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = K75VWLJS7A;
-				GENERATE_INFOPLIST_FILE = YES;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = empty.AnagramReverseWordsUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = AnagramReverseWords;
-			};
-			name = Debug;
-		};
-		DEB9B72527C5174D008E00E3 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = K75VWLJS7A;
-				GENERATE_INFOPLIST_FILE = YES;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = empty.AnagramReverseWordsUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = AnagramReverseWords;
 			};
 			name = Release;
 		};
@@ -1185,7 +585,6 @@
 		};
 		DEE90655273B0E96006D252E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 41DA4415F37BBEB828848B51 /* Pods-ReverseWords.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1215,7 +614,6 @@
 		};
 		DEE90656273B0E96006D252E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C35DF6B135264A3D95C2BD08 /* Pods-ReverseWords.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1260,33 +658,6 @@
 			buildConfigurations = (
 				DE651BD427B93D4D00A47114 /* Debug */,
 				DE651BD527B93D4D00A47114 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		DEB9B70427C50EBA008E00E3 /* Build configuration list for PBXNativeTarget "AnagramReverseWords" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				DEB9B70527C50EBA008E00E3 /* Debug */,
-				DEB9B70627C50EBA008E00E3 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		DEB9B71327C51410008E00E3 /* Build configuration list for PBXNativeTarget "AnagramReverseWordsTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				DEB9B71427C51410008E00E3 /* Debug */,
-				DEB9B71527C51410008E00E3 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		DEB9B72327C5174D008E00E3 /* Build configuration list for PBXNativeTarget "AnagramReverseWordsUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				DEB9B72427C5174D008E00E3 /* Debug */,
-				DEB9B72527C5174D008E00E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

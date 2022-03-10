@@ -99,7 +99,7 @@ class MainViewController: UIViewController {
             reverseButton.setTitle(ButtonTitle.reverse, for: .normal)
         }
         
-        func setUpResultState(_ reversedText:String) {
+        func setUpResultState(_ reversedText: String) {
             dividerView.backgroundColor = Color.dividerNonActive
             reverseButton.setTitle(ButtonTitle.clear, for: .normal)
             textOutput.text = reversedText
@@ -208,9 +208,9 @@ class MainViewController: UIViewController {
 
 private extension MainViewController {
     enum Font {
-        static let header:UIFont = UIFont.main(weight: .bold, size: 34)
-        static let regular:UIFont = UIFont.main(size: 17)
-        static let output:UIFont = UIFont.main(size: 24)
+        static let header: UIFont = UIFont.main(weight: .bold, size: 34)
+        static let regular: UIFont = UIFont.main(size: 17)
+        static let output: UIFont = UIFont.main(size: 24)
     }
     
     enum Color {
